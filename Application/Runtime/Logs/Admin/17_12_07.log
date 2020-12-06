@@ -1,0 +1,3 @@
+[ 2017-12-07T20:49:47+08:00 ] 127.0.0.1 /test_of_thinkPHP/admin/test/pagelist/
+ERR: 模板不存在:./Application/Admin/View/Test/pagelist.html.html
+

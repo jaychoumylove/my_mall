@@ -1,0 +1,45 @@
+[ 2017-12-11T18:05:28+08:00 ] 127.0.0.1 /test_of_thinkPHP/home/index/dis_other/
+ERR: 模板不存在:./Application/Admin/View/index/index/.html
+
+[ 2017-12-11T18:06:33+08:00 ] 127.0.0.1 /test_of_thinkPHP/home/index/dis_other/
+ERR: 模板不存在:./Application/Admin/View/index/index/.html
+
+[ 2017-12-11T18:07:05+08:00 ] 127.0.0.1 /test_of_thinkPHP/home/index/dis_other
+ERR: 模板不存在:./Application/Admin/View/index/index/.html
+
+[ 2017-12-11T18:07:18+08:00 ] 127.0.0.1 /test_of_thinkPHP/home/index/dis_other
+ERR: 模板不存在:./Application/Admin/View/index/.html
+
+[ 2017-12-11T18:15:42+08:00 ] 127.0.0.1 /test_of_thinkPHP/home/index/dis
+ERR: 模板不存在:./Application/Home/View/Index/test_u.html
+
+[ 2017-12-11T18:16:33+08:00 ] 127.0.0.1 /test_of_thinkPHP/home/index/dis
+ERR: 模板不存在:./Application/Home/View/Index/test_u.html
+
+[ 2017-12-11T18:18:45+08:00 ] 127.0.0.1 /test_of_thinkPHP/home/index/dis
+ERR: Think\Controller:index方法不存在！
+
+[ 2017-12-11T18:19:18+08:00 ] 127.0.0.1 /test_of_thinkPHP/home/index/dis
+ERR: Think\Controller:index方法不存在！
+
+[ 2017-12-11T18:19:19+08:00 ] 127.0.0.1 /test_of_thinkPHP/home/index/dis
+ERR: Think\Controller:index方法不存在！
+
+[ 2017-12-11T18:19:19+08:00 ] 127.0.0.1 /test_of_thinkPHP/home/index/dis
+ERR: Think\Controller:index方法不存在！
+
+[ 2017-12-11T18:19:19+08:00 ] 127.0.0.1 /test_of_thinkPHP/home/index/dis
+ERR: Think\Controller:index方法不存在！
+
+[ 2017-12-11T18:19:20+08:00 ] 127.0.0.1 /test_of_thinkPHP/home/index/dis
+ERR: Think\Controller:index方法不存在！
+
+[ 2017-12-11T18:19:20+08:00 ] 127.0.0.1 /test_of_thinkPHP/home/index/dis
+ERR: Think\Controller:index方法不存在！
+
+[ 2017-12-11T18:19:20+08:00 ] 127.0.0.1 /test_of_thinkPHP/home/index/dis
+ERR: Think\Controller:index方法不存在！
+
+[ 2017-12-11T18:19:20+08:00 ] 127.0.0.1 /test_of_thinkPHP/home/index/dis
+ERR: Think\Controller:index方法不存在！
+

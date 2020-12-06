@@ -1,0 +1,151 @@
+[ 2017-12-20T09:11:51+08:00 ] 127.0.0.1 /my_mall/Home/Index/aboutus
+ERR: 模板不存在:./Application/Home/View/index/aboutsus.html
+
+[ 2017-12-20T15:19:08+08:00 ] 127.0.0.1 /my_mall/home/login/register
+ERR: 模板不存在:./Application/Home/View/login/register.html
+
+[ 2017-12-20T16:42:21+08:00 ] 127.0.0.1 /my_mall/home/shopcar/shopcar
+ERR: 模板不存在:./Application/Home/View/shopcar/shopcar.html
+
+[ 2017-12-20T16:55:27+08:00 ] 127.0.0.1 /my_mall/home/shopcar/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000932s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002153s ]
+SQL: SHOW COLUMNS FROM `ms_shopcar` [ RunTime:0.016054s ]
+
+[ 2017-12-20T16:58:17+08:00 ] 127.0.0.1 /my_mall/home/shopcar/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004810s ]
+SQL: SHOW COLUMNS FROM `ms_shopcar` [ RunTime:0.011585s ]
+SQL: INSERT INTO `ms_shopcar` (`user_Name`,`pro_Id`,`pro_num`,`addtime`) VALUES ('qcx120',25,1,'2017-12-20 16:58:17') [ RunTime:0.025425s ]
+
+[ 2017-12-20T16:58:26+08:00 ] 127.0.0.1 /my_mall/home/shopcar/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001701s ]
+SQL: SHOW COLUMNS FROM `ms_shopcar` [ RunTime:0.030270s ]
+SQL: INSERT INTO `ms_shopcar` (`user_Name`,`pro_Id`,`pro_num`,`addtime`) VALUES ('qcx120',2,2,'2017-12-20 16:58:26') [ RunTime:0.000368s ]
+
+[ 2017-12-20T16:58:44+08:00 ] 127.0.0.1 /my_mall/home/shopcar/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001715s ]
+SQL: SHOW COLUMNS FROM `ms_shopcar` [ RunTime:0.016337s ]
+SQL: INSERT INTO `ms_shopcar` (`user_Name`,`pro_Id`,`pro_num`,`addtime`) VALUES ('qcx120',3,3,'2017-12-20 16:58:44') [ RunTime:0.000352s ]
+
+[ 2017-12-20T16:59:13+08:00 ] 127.0.0.1 /my_mall/home/shopcar/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000922s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001763s ]
+SQL: SHOW COLUMNS FROM `ms_shopcar` [ RunTime:0.027999s ]
+
+[ 2017-12-20T17:08:29+08:00 ] 127.0.0.1 /my_mall/home/shopcar/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002109s ]
+SQL: SHOW COLUMNS FROM `ms_shopcar` [ RunTime:0.011196s ]
+SQL: SELECT * FROM `ms_shopcar` WHERE `pro_Id` = 3 AND `user_Name` = 'qcx120' LIMIT 1   [ RunTime:0.000346s ]
+SQL: INSERT INTO `ms_shopcar` (`user_Name`,`pro_Id`,`pro_num`,`addtime`) VALUES ('qcx120',3,3,'2017-12-20 17:08:29') [ RunTime:0.000258s ]
+
+[ 2017-12-20T17:09:03+08:00 ] 127.0.0.1 /my_mall/home/shopcar/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001116s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002098s ]
+SQL: SHOW COLUMNS FROM `ms_shopcar` [ RunTime:0.011744s ]
+SQL: SELECT * FROM `ms_shopcar` WHERE `pro_Id` = 3 AND `user_Name` = 'qcx120' LIMIT 1   [ RunTime:0.083415s ]
+SQL: UPDATE `ms_shopcar` SET `Id`=4,`user_Name`='qcx120',`pro_Id`=3,`pro_num`=3,`addtime`='2017-12-20 17:09:03' WHERE `pro_Id` = 3 AND `user_Name` = 'qcx120' [ RunTime:0.001035s ]
+
+[ 2017-12-20T17:11:20+08:00 ] 127.0.0.1 /my_mall/home/shopcar/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002170s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003326s ]
+SQL: SHOW COLUMNS FROM `ms_shopcar` [ RunTime:0.010118s ]
+SQL: SELECT * FROM `ms_shopcar` WHERE `pro_Id` = 25 AND `user_Name` = 'qcx120' LIMIT 1   [ RunTime:0.001637s ]
+SQL: UPDATE `ms_shopcar` SET `Id`=1,`user_Name`='qcx120',`pro_Id`=25,`pro_num`=19,`addtime`='2017-12-20 17:11:20' WHERE `pro_Id` = 25 AND `user_Name` = 'qcx120' [ RunTime:0.000446s ]
+
+[ 2017-12-20T17:11:55+08:00 ] 127.0.0.1 /my_mall/home/shopcar/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002276s ]
+SQL: SHOW COLUMNS FROM `ms_shopcar` [ RunTime:0.012082s ]
+SQL: INSERT INTO `ms_shopcar` (`user_Name`,`pro_Id`,`pro_num`,`addtime`) VALUES ('qcx120',25,19,'2017-12-20 17:11:55') [ RunTime:0.000311s ]
+
+[ 2017-12-20T17:12:12+08:00 ] 127.0.0.1 /my_mall/home/shopcar/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001123s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001898s ]
+SQL: SHOW COLUMNS FROM `ms_shopcar` [ RunTime:0.010187s ]
+
+[ 2017-12-20T17:12:18+08:00 ] 127.0.0.1 /my_mall/home/shopcar/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002036s ]
+SQL: SHOW COLUMNS FROM `ms_shopcar` [ RunTime:0.018444s ]
+
+[ 2017-12-20T17:12:27+08:00 ] 127.0.0.1 /my_mall/home/shopcar/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004205s ]
+SQL: SHOW COLUMNS FROM `ms_shopcar` [ RunTime:0.014544s ]
+
+[ 2017-12-20T17:12:42+08:00 ] 127.0.0.1 /my_mall/home/shopcar/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002403s ]
+SQL: SHOW COLUMNS FROM `ms_shopcar` [ RunTime:0.029220s ]
+SQL: SELECT * FROM `ms_shopcar` WHERE `pro_Id` = 25 AND `user_Name` = 'qcx120' LIMIT 1   [ RunTime:0.000462s ]
+SQL: UPDATE `ms_shopcar` SET `Id`=1,`user_Name`='qcx120',`pro_Id`=25,`pro_num`=23,`addtime`='2017-12-20 17:12:42' WHERE `pro_Id` = 25 AND `user_Name` = 'qcx120' [ RunTime:0.000350s ]
+ERR: 1062:Duplicate entry '1' for key 'PRIMARY'
+ [ SQL语句 ] : UPDATE `ms_shopcar` SET `Id`=1,`user_Name`='qcx120',`pro_Id`=25,`pro_num`=23,`addtime`='2017-12-20 17:12:42' WHERE `pro_Id` = 25 AND `user_Name` = 'qcx120'
+
+[ 2017-12-20T17:14:06+08:00 ] 127.0.0.1 /my_mall/home/shopcar/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002562s ]
+SQL: SHOW COLUMNS FROM `ms_shopcar` [ RunTime:0.013597s ]
+SQL: SELECT * FROM `ms_shopcar` WHERE `pro_Id` = 25 AND `user_Name` = 'qcx741' LIMIT 1   [ RunTime:0.001028s ]
+
+[ 2017-12-20T17:14:15+08:00 ] 127.0.0.1 /my_mall/home/shopcar/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000825s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001694s ]
+SQL: SHOW COLUMNS FROM `ms_shopcar` [ RunTime:0.012135s ]
+SQL: SELECT * FROM `ms_shopcar` WHERE `pro_Id` = 25 AND `user_Name` = 'qcx741' LIMIT 1   [ RunTime:0.000458s ]
+
+[ 2017-12-20T17:14:52+08:00 ] 127.0.0.1 /my_mall/home/shopcar/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003140s ]
+SQL: SHOW COLUMNS FROM `ms_shopcar` [ RunTime:0.019254s ]
+SQL: SELECT * FROM `ms_shopcar` WHERE `pro_Id` = 25 AND `user_Name` = 'qcx741' LIMIT 1   [ RunTime:0.000414s ]
+
+[ 2017-12-20T17:15:52+08:00 ] 127.0.0.1 /my_mall/home/shopcar/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007872s ]
+SQL: SHOW COLUMNS FROM `ms_shopcar` [ RunTime:0.016895s ]
+SQL: SELECT * FROM `ms_shopcar` WHERE `pro_Id` = 25 AND `user_Name` = 'qcx741' LIMIT 1   [ RunTime:0.000377s ]
+
+[ 2017-12-20T17:58:29+08:00 ] 127.0.0.1 /my_mall/home/shopcar/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009672s ]
+SQL: SHOW COLUMNS FROM `ms_shopcar` [ RunTime:0.028566s ]
+SQL: SELECT * FROM `ms_shopcar` WHERE `pro_Id` = 25 AND `user_Name` = 'qcx741' LIMIT 1   [ RunTime:0.002259s ]
+
+[ 2017-12-20T18:03:32+08:00 ] 127.0.0.1 /my_mall/home/shopcar/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003936s ]
+SQL: SHOW COLUMNS FROM `ms_shopcar` [ RunTime:0.033417s ]
+SQL: SELECT * FROM `ms_shopcar` WHERE `pro_Id` = 25 AND `user_Name` = 'qcx741' LIMIT 1   [ RunTime:0.000400s ]
+
+[ 2017-12-20T18:05:11+08:00 ] 127.0.0.1 /my_mall/home/shopcar/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000899s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001771s ]
+SQL: SHOW COLUMNS FROM `ms_shopcar` [ RunTime:0.031520s ]
+SQL: SELECT * FROM `ms_shopcar` WHERE `pro_Id` = 25 AND `user_Name` = 'qcx741' LIMIT 1   [ RunTime:0.000373s ]
+SQL: INSERT INTO `ms_shopcar` (`user_Name`,`pro_Id`,`pro_num`,`addtime`) VALUES ('qcx741',25,2,'2017-12-20 18:05:11') [ RunTime:0.000388s ]
+

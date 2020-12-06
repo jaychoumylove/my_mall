@@ -1,0 +1,186 @@
+input:focus {
+	
+}
+.section{background:url(../images/loginbg.jpg)
+}
+.min-width {min-width: 1080px;
+}
+.main {margin: 0px auto; width: 1080px; min-width: 1080px;
+}
+label {margin: 0px; font-weight: normal;
+}
+.login-box-pan {padding: 50px 80px 50px 30px;
+}
+/*.login-info {width: 290px;
+}
+.login-info h2 {width: 100%; color: rgb(52, 152, 219); line-height: 38px; font-size: 18px; font-weight: 700; border-bottom-color: rgb(238, 239, 243); border-bottom-width: 2px; border-bottom-style: solid;
+}
+.login-info h2 span {padding: 0px 10px; height: 38px; bottom: -2px; border-bottom-color: rgb(52, 152, 219); border-bottom-width: 2px; border-bottom-style: solid; display: inline-block; position: relative;
+}
+.login-info .item {width: 290px; height: 70px;
+}
+.login-info .item-input {padding: 7px 10px; border: 1px solid rgb(229, 229, 229); height: 38px; line-height: 24px;
+}
+.login-info img {margin: 2px 10px 0px; width: 70px; height: 30px;
+}*/
+.tu{float:right;inline-block; margin-top:-34px; border-radius:5px;
+}
+.login-box a.c-blue:hover {color: rgb(255, 125, 39); text-decoration: underline;
+}
+.login-box{ position:relative; overflow:hidden;
+}
+.loginbg{width:300px; position:absolute; bottom:70px; right:7px; border-radius:50%; z-index:10; box-shadow:3px 8px 5px #a6a6a6;
+}
+.loginbg1{width:100px; position:absolute; top:-30px; left:-30px; z-index:10; border-radius:50%; box-shadow:5px 8px 5px #a6a6a6;
+}
+.loginbg:hover ,.loginbg1:hover{animation: spinner 3s linear infinite; -webkit-animation: spinner 3s linear infinite;
+}
+.reg-box-pan {padding: 0px 40px 20px; width: 100%;
+}
+.reg-box{margin-top:30px; margin-left:17%;
+}
+.txt03 {padding: 9px 10px; border: 1px solid rgb(204, 204, 204); width: 270px; color: rgb(153, 153, 153); line-height: 16px; overflow: hidden; font-family: arial,"ËÎÌו"; font-size: 14px; float: none;
+}
+.reg-box .item {height: 68px; line-height: 34px; position: relative; z-index: 5; 
+}
+.reg-box .intelligent-label {width: 100px; text-align: right; color: rgb(102, 102, 102); padding-right: 10px; font-size: 14px;
+}
+.reg-box .intelligent-label b {color: red; font-family: "????"; font-weight: normal; margin-right: 5px;
+}
+.reg-box .item .item-ifo {width: 270px; position: relative; display:inline-block;
+}
+.reg-box .v_error.txt03 {border-color: rgb(255, 0, 0);
+}
+.reg-box .txt03:focus {border:1px solid #57b26b;
+}
+.reg-box .blank {left: 280px; top: 11px; width: 16px; height: 16px; color: rgb(122, 189, 84); font-size: 16px; float: none; position: absolute;
+}
+.reg-box .close {top: 5px; right: 25px; font-size: 24px; position: absolute;
+}
+.reg-box .focus {padding: 0px 5px; left: 280px; top: 0px; width: 270px; height: 34px; color: rgb(153, 153, 153); line-height: 34px; font-size: 12px; font-weight: normal; position: absolute; z-index: 3;
+}
+.reg-box .focusa {padding: 0px 5px; left: 280px; top: 0px; width: 270px; height: 34px; color: rgb(153, 153, 153); line-height: 34px; font-size: 12px; font-weight: normal; position: absolute; z-index: 3;
+}
+.reg-box .error {padding: 0px 5px; left: 280px; top: 0px; width: 270px; height: 34px; color: rgb(153, 153, 153); line-height: 34px; font-size: 12px; font-weight: normal; position: absolute; z-index: 3;
+}
+.reg-box .ma img{margin-top:-2px;
+}
+.reg-box .focus span {padding: 3px 0px; line-height: 16px; display: block;
+}
+.reg-box .error span {padding: 3px 0px; line-height: 16px; display: block;
+}
+.reg-box .focus {color: rgb(153, 153, 153);
+}
+.reg-box .valid {color: rgb(255, 0, 0);
+}
+.reg-box .strength {top: 39px; right: -9px; color: rgb(153, 153, 153); line-height: 22px; padding-right: 10px; clear: both; float: none; display: none; position: absolute;
+}
+.reg-box .strength b {width: 108px; height: 16px; overflow: hidden; font-weight: 400; margin-top: 5px; float: left;
+}
+.reg-box .strength b i {background: rgb(219, 219, 219); width: 34px; height: 16px; text-align: center; color: rgb(255, 255, 255); line-height: 16px; font-size: 10px; font-style: normal; margin-left: 1px; float: left; display: inline-block;
+}
+.reg-box .strength b i.on {background: rgb(255, 97, 96);
+}
+.reg-box .btn-blue {padding: 0px; width: 270px; height: 44px; line-height: 44px; font-size: 18px; margin-left:44%;
+}
+.showpwd {background: url("../images/showpwd.png") no-repeat center / 16px 16px; top: 8px; width: 16px; height: 16px; right: 10px; display: inline-block; position: absolute; cursor: pointer;
+}
+.hidepwd.showpwd {background-image: url("../images/hidepwd.png");
+}
+.widget-body{width:363px; margin:0 auto 50px;
+}
+.widget-main{margin:10px auto;
+}
+.widget-main label {margin-bottom: 20px;
+}
+.block { display: block !important;
+}
+label { font-weight: 400; font-size: 14px;
+}
+.input-icon { position: relative;
+}
+.input-icon.input-icon-right > input { padding-left: 6px; padding-right: 24px;
+}
+input:hover ,input:hover:active ,input:focus{
+	border-color: rgb(78, 178, 107);
+}
+input[type="color"], input[type="date"], input[type="datetime-local"], input[type="datetime"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], textarea {border-radius: 2px; color: #858585; background-color: #FFF; border: 1px solid #D5D5D5;
+ padding: 5px 4px 6px; font-size: 14px; font-family: inherit; box-shadow: none !important; transition-duration: 0.1s;
+}
+.input-icon.input-icon-right > .ace-icon {left: auto; right: 3px;
+}
+
+.input-icon > .ace-icon { padding:6px 5px; z-index: 2;  position: absolute; top: 1px; bottom: 1px; left: 3px; line-height: 30px; display: inline-block; color: #909090; font-size: 16px;
+}
+.ace-icon { text-align: center;
+}
+.btn-primary, .btn-primary:focus{
+	border:1px solid #5FBD74;
+	background-color:#5FBD74;
+	
+}
+.btn, .btn-default, .btn-default:focus, .btn:focus ,.btn:hover {
+	border-color: rgb(78, 178, 107);
+	background-color: rgb(78, 178, 107);
+	
+}
+.btn-group-sm > .btn, .btn-sm {  border-width: 4px; font-size: 13px;  padding: 4px 9px; line-height: 1.38;
+}
+
+.btn {display: inline-block; color: #FFF !important; text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25); background-image: none !important; box-shadow: none !important;
+ transition: background-color 0.15s ease 0s, border-color 0.15s ease 0s, opacity 0.15s ease 0s;  cursor: pointer; vertical-align: middle;  margin: 0px; position: relative;
+}
+.width-35{display:block; width:50%; margin:-10px auto 0; border-radius:2px; font-size:16px;
+}
+
+.social-or-login {
+    margin: 15px auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.social-or-login::before { content:""; display: block;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 0px;
+    right: 0px;
+    border-top: 1px dotted #A6C4DB;
+}
+.social-or-login :first-child {
+    display: inline-block;
+    background: #F7F7F7 none repeat scroll 0% 0%;
+    padding: 0px 8px;
+    color: #5090C1;
+    font-size: 13px;
+}
+.bigger-110 {
+    font-size: 110% !important;
+}
+.align-center, .center {
+    text-align: center !important;
+}
+.social-login a {border-radius: 100%; width: 42px; height: 42px; line-height: 46px; padding: 0px; margin: 0px 2px; border-width: 0px;
+}
+.btn-info, .btn-info:focus { background-color: #6FB3E0 !important; border-color: #6FB3E0;
+}
+.btn-danger, .btn-danger:focus { background-color: #D15B47 !important; border-color: #D15B47;
+}
+.social-login a > .ace-icon {font-size: 24px; margin: 0px;
+}
+.login-box .toolbar { margin-top:20px;
+}
+.login-box .toolbar > div {width: 50%; display: inline-block; padding: 15px 0px; color:#666;
+}
+.login-box .toolbar > div:first-child { float: left; text-align: left;  background:url(../images/jianrng.png) no-repeat left;
+}
+.login-box .toolbar > div > a {font-size: 15px; font-weight: 400;
+}
+.login-box .toolbar > div:first-child > a { margin-left:25px;
+}
+.login-box .toolbar > div:first-child + div { float: right; text-align: right; background:url(../images/jianbg.png) no-repeat right;
+}
+.login-box .toolbar > div:first-child + div > a { margin-right: 25px; 
+}
+.login-box .toolbar > div:first-child + div > a i{margin-left:5px;
+}

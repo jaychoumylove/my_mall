@@ -1,0 +1,439 @@
+﻿<!doctype html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<title>关于我们</title>
+<link rel="stylesheet" href="__PUBLIC__/home/css/bootstrap.min.css" type="text/css" media="all">
+<link rel="stylesheet" href="__PUBLIC__/home/css/font-awesome.min.css" type="text/css" media="all" />
+<link rel="stylesheet" href="__PUBLIC__/home/css/ionicons.min.css" type="text/css" media="all" />
+<link rel="stylesheet" href="__PUBLIC__/home/css/owl.carousel.css" type="text/css" media="all">
+<link rel="stylesheet" href="__PUBLIC__/home/css/owl.theme.css" type="text/css" media="all">
+<link rel="stylesheet" href="__PUBLIC__/home/css/prettyPhoto.css" type="text/css" media="all">
+<link rel="stylesheet" href="__PUBLIC__/home/css/style.css" type="text/css" media="all">
+<link rel="stylesheet" href="__PUBLIC__/home/css/custom.css" type="text/css" media="all">
+<!--<link href="http://fonts.googleapis.com/css?family=Great+Vibes%7CLato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+--><!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+	<script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="http://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+<div id="menu-slideout" class="slideout-menu hidden-md-up">
+	<div class="mobile-menu">
+		<ul id="mobile-menu" class="menu">
+			<li><a href="__ROOT__">首页</a></li>
+			<li><a href="__APP__/home/product/product">购物中心</a></li>
+			<li><a href="__APP__/home/index/aboutus">关于我们</a></li>
+			<li><a href="__APP__/home/index/contactus">联系我们</a></li>
+		</ul>
+	</div>
+</div>
+<div class="site">
+	<div class="topbar">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="topbar-text">
+						<span>营业时间: 8:00-21:00</span> 
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="topbar-menu">
+						<ul class="topbar-menu">
+							<li><a href="__APP__/home/user/user">个人中心</a></li>
+                            <if condition="$_SESSION['user'] eq ''">
+							<li><a href="__APP__/home/login/login">登录</a></li>
+							<li><a href="__APP__/home/login/register">注册</a></li>
+                            <else /> 
+                            <li><a href="__APP__/home/login/cancellation">切换</a></li>
+							<li><a href="__APP__/home/login/quit">退出</a></li>
+                            </if>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<header id="header" class="header header-desktop header-2">
+		<div class="top-search">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<form action="__APP__/home/product/product" method="post">
+							<input type="search" class="top-search-input" name="name" placeholder="您的想法" /><button type="submit">搜索</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<a href="__ROOT__" id="logo"> <img class="logo-image" src="__PUBLIC__/home/images/logo.png" alt="Organik Logo" /> </a>
+				</div>
+				<div class="col-md-9">
+					<div class="header-right">
+						<nav class="menu">
+							<ul class="main-menu">
+                                <li><a href="__APP__/home/index/index">首页</a></li>
+                                <li><a href="__APP__/home/product/product">购物中心</a></li>
+                                <li><a href="__APP__/home/index/aboutus">关于我们</a></li>
+                                <li><a href="__APP__/home/index/contactus">联系我们</a></li>
+							</ul>
+						</nav>
+						<div class="btn-wrap">
+							<div class="mini-cart-wrap">
+								<div class="mini-cart">
+									<div class="mini-cart-icon" data-count="{$allshopcar}">
+										<i class="ion-bag"></i>
+									</div>
+								</div>
+								<div class="widget-shopping-cart-content">
+									<ul class="cart-list">
+                                    <foreach name="minishopcar" item="vmns">
+										<li>
+											<a href="__APP__/home/product/productinfo/Id/{$vmns.pro_Id}">
+												<img src="__PUBLIC__/uploads/product_img/{$vmns.Pimg}" alt="" /> {$vmns.Pname}&nbsp;
+											</a>
+											<span class="quantity">{$vmns.pro_num} × ￥{$vmns.PHprice}</span>
+										</li>
+                                    </foreach>
+									</ul>
+									<p class="buttons"> <a href="__APP__/home/shopcar/shopcar" class="view-cart">进入购物车查看更多</a> </p>
+								</div>
+							</div>
+							<div class="top-search-btn-wrap">
+								<div class="top-search-btn">
+									<a href="javascript:void(0);"> <i class="ion-search"></i> </a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<header class="header header-mobile">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-2">
+					<div class="header-left">
+						<div id="open-left"><i class="ion-navicon"></i></div>
+					</div>
+				</div>
+				<div class="col-xs-8">
+					<div class="header-center"> 
+                    	<a href="__ROOT__" id="logo-2"> <img class="logo-image" src="__PUBLIC__/home/images/logo.png" alt="garden stuff Logo" /> </a> 
+                    </div>
+				</div>
+				<div class="col-xs-2">
+					<div class="header-right">
+						<div class="mini-cart-wrap">
+							<a href="__APP__/home/shopcar/shopcar">
+								<div class="mini-cart">
+									<div class="mini-cart-icon" data-count="2"> <i class="ion-bag"></i> </div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+   	<div id="main">
+		<div class="section section-bg-9 pt-11 pb-17">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12"> <h2 class="page-title text-center">关于我们</h2> </div>
+				</div>
+			</div>
+		</div>
+		<div class="section border-bottom pt-2 pb-2">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<ul class="breadcrumbs">
+							<li><a href="index.html">首页</a></li>
+							<li>关于我们</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section pt-10 pb-10">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="text-center mb-1 section-pretitle">Welcome to Organik!</div>
+						<h2 class="text-center section-title mtn-2">关于我们的小故事 </h2>
+						<div class="organik-seperator mb-9 center">
+							<span class="sep-holder"><span class="sep-line"></span></span>
+							<div class="sep-icon"><i class="organik-flower"></i></div>
+							<span class="sep-holder"><span class="sep-line"></span></span>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="about-main-img col-lg-6"> <img src="__PUBLIC__/home/images/about_1.jpg" alt="" /> </div>
+					<div class="about-content col-lg-6">
+						<div class="about-content-title">
+							<h4>一体化农场</h4>
+							<div class="about-content-title-line"></div>
+						</div>
+						<div class="about-content-text">
+							<p>我们的农场是现代有机农场，是我们的父母，马克和奥利;我们的梦想：提供最好和最健康的有机食品 , 促进社区健康，带来发现和冒险的感觉。</p>
+							<p>访问我们的网站，为我们提供新鲜的有机水果和蔬菜的完整清单。<br></p>
+						</div>
+						<div class="about-carousel" data-auto-play="true" data-desktop="4" data-laptop="4" data-tablet="4" data-mobile="2">
+							<a href="__PUBLIC__/home/images/carousel/img_large_1.jpg" data-rel="prettyPhoto[gallery]">
+								<img src="__PUBLIC__/home/images/carousel/img_1.jpg" alt="" /> <span class="ion-plus-round"></span> 
+							</a>
+							<a href="__PUBLIC__/home/images/carousel/img_large_2.jpg" data-rel="prettyPhoto[gallery]">
+								<img src="__PUBLIC__/home/images/carousel/img_2.jpg" alt="" /> <span class="ion-plus-round"></span> 
+							</a>
+							<a href="__PUBLIC__/home/images/carousel/img_large_3.jpg" data-rel="prettyPhoto[gallery]">
+								<img src="__PUBLIC__/home/images/carousel/img_3.jpg" alt="" /> <span class="ion-plus-round"></span> 
+							</a>
+							<a href="__PUBLIC__/home/images/carousel/img_large_4.jpg" data-rel="prettyPhoto[gallery]">
+								<img src="__PUBLIC__/home/images/carousel/img_4.jpg" alt="" /> <span class="ion-plus-round"></span> 
+							</a>
+							<a href="__PUBLIC__/home/images/carousel/img_large_5.jpg" data-rel="prettyPhoto[gallery]">
+								<img src="__PUBLIC__/home/images/carousel/img_5.jpg" alt="" /> <span class="ion-plus-round"></span> 
+							</a>
+							<a href="__PUBLIC__/home/images/carousel/img_large_6.jpg" data-rel="prettyPhoto[gallery]">
+								<img src="__PUBLIC__/home/images/carousel/img_6.jpg" alt="" /> <span class="ion-plus-round"></span> 
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section bg-light pt-16 pb-6">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="text-center mb-1 section-pretitle">Why choose our healthy store?</div>
+						<div class="organik-seperator mb-9 center">
+							<span class="sep-holder"><span class="sep-line"></span></span>
+							<div class="sep-icon"><i class="organik-flower"></i></div>
+							<span class="sep-holder"><span class="sep-line"></span></span>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-sm-12">
+						<div class="icon-boxes">
+							<div class="icon-boxes-icon"><i class="ion-android-star-outline"></i></div>
+							<div class="icon-boxes-inner">
+								<h6 class="icon-boxes-title"> 吃的更健康</h6>
+								<p>获得推荐的日常水果和蔬菜。</p>
+							</div>
+						</div>
+						<div class="icon-boxes">
+							<div class="icon-boxes-icon"><i class="organik-lemon"></i></div>
+							<div class="icon-boxes-inner">
+								<h6 class="icon-boxes-title"> 我们的声誉</h6>
+								<p>自2016以来，我们一直在为客户生产有机产品。 </p>
+							</div>
+						</div>
+						<div class="icon-boxes">
+							<div class="icon-boxes-icon"><i class="organik-cucumber"></i></div>
+							<div class="icon-boxes-inner">
+								<h6 class="icon-boxes-title"> 新鲜及无农药</h6>
+								<p>我们提供有机无农药和可持续生产的农产品。</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-12">
+						<div class="text-center"> <img src="__PUBLIC__/home/images/about_pic.png" alt="" /> </div>
+					</div>
+					<div class="col-md-4 col-sm-12">
+						<div class="icon-boxes right">
+							<div class="icon-boxes-icon"><i class="organik-broccoli"></i></div>
+							<div class="icon-boxes-inner">
+								<h6 class="icon-boxes-title">没有承诺的要求</h6>
+								<p>我们不需要承诺，允许您取消或暂停交付。</p>
+							</div>
+						</div>
+						<div class="icon-boxes right">
+							<div class="icon-boxes-icon"><i class="organik-carrot"></i></div>
+							<div class="icon-boxes-inner">
+								<h6 class="icon-boxes-title"> 灵活性</h6>
+								<p>选择最适合你需要的交货频率。</p>
+							</div>
+						</div>
+						<div class="icon-boxes right">
+							<div class="icon-boxes-icon"><i class="organik-tomato"></i></div>
+							<div class="icon-boxes-inner">
+								<h6 class="icon-boxes-title">定制 </h6>
+								<p>自定义您的标准交付，以排除您不想要的项目。 </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section border-bottom pt-11 pb-10">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="text-center mb-1 section-pretitle">Our farmers</div>
+						<h2 class="text-center section-title mtn-2">我们是优秀的农民</h2>
+						<div class="organik-seperator center mb-8">
+							<span class="sep-holder"><span class="sep-line"></span></span>
+							<div class="sep-icon"><i class="organik-flower"></i></div>
+							<span class="sep-holder"><span class="sep-line"></span></span>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-sm-12">
+						<div class="team-member">
+							<div class="image"> <img src="__PUBLIC__/home/images/testimonial/picture_3.jpg" alt="Michael Andrews" /> </div>
+							<div class="team-info">
+								<h5 class="name">鲁斯</h5>
+								<p class="bio">出生于Capay的农场，米迦勒显示在机加工车间的早期水平，是当今设计工具用在农场负责。</p>
+								<ul class="social-list">
+									<li><a href="#" data-toggle="tooltip" data-placement="top" data-original-title="微信"><i class="fa fa-weixin"></i></a></li>
+									<li><a href="#" data-toggle="tooltip" data-placement="top" data-original-title="微博"><i class="fa fa-weibo"></i></a></li>
+									<li><a href="#" data-toggle="tooltip" data-placement="top" data-original-title="相片"><i class="fa fa-pinterest"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-12">
+						<div class="team-member">
+							<div class="image"> <img src="__PUBLIC__/home/images/testimonial/picture_4.jpg" alt="Kathleen Barsotti" /> </div>
+							<div class="team-info">
+								<h5 class="name">凯琳</h5>
+								<p class="bio">出生在Belmont，CA，凯思琳出席了UC Riverside的她在那里得到专业农业。她是农场的老板和经理。</p>
+								<ul class="social-list">
+									<li><a href="#" data-toggle="tooltip" data-placement="top" data-original-title="微信"><i class="fa fa-weixin"></i></a></li>
+									<li><a href="#" data-toggle="tooltip" data-placement="top" data-original-title="微博"><i class="fa fa-weibo"></i></a></li>
+									<li><a href="#" data-toggle="tooltip" data-placement="top" data-original-title="相片"><i class="fa fa-pinterest"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-12">
+						<div class="team-member">
+							<div class="image"> <img src="__PUBLIC__/home/images/testimonial/picture_2.jpg" alt="Mark Ronson" /> </div>
+							<div class="team-info">
+								<h5 class="name">马克</h5>
+								<p class="bio">他致力于建立一个强有力的金融模式，让农民通过直接管理我们当前的计划直接将产品与消费者联系起来。</p>
+								<ul class="social-list">
+									<li><a href="#" data-toggle="tooltip" data-placement="top" data-original-title="微信"><i class="fa fa-weixin"></i></a></li>
+									<li><a href="#" data-toggle="tooltip" data-placement="top" data-original-title="微博"><i class="fa fa-weibo"></i></a></li>
+									<li><a href="#" data-toggle="tooltip" data-placement="top" data-original-title="相片"><i class="fa fa-pinterest"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section pt-2 pb-4">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="client-carousel" data-auto-play="true" data-desktop="5" data-laptop="3" data-tablet="3" data-mobile="2">
+							<div class="client-item">
+								<a href="#" target="_blank"> <img src="__PUBLIC__/home/images/client/client_1.png" alt="" /> </a>
+							</div>
+							<div class="client-item">
+								<a href="#" target="_blank"> <img src="__PUBLIC__/home/images/client/client_2.png" alt="" /> </a>
+							</div>
+							<div class="client-item">
+								<a href="#" target="_blank"> <img src="__PUBLIC__/home/images/client/client_3.png" alt="" /> </a>
+							</div>
+							<div class="client-item">
+								<a href="#" target="_blank"> <img src="__PUBLIC__/home/images/client/client_4.png" alt="" /> </a>
+							</div>
+							<div class="client-item">
+								<a href="#" target="_blank"> <img src="__PUBLIC__/home/images/client/client_5.png" alt="" /> </a>
+							</div>
+                            <div class="client-item">
+								<a href="#" target="_blank"> <img src="__PUBLIC__/home/images/client/client_1.png" alt="" /> </a>
+							</div>
+                            <div class="client-item">
+								<a href="#" target="_blank"> <img src="__PUBLIC__/home/images/client/client_2.png" alt="" /> </a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5">
+					<img src="__PUBLIC__/home/images/footer_logo.png" class="footer-logo" alt="" />
+					<p>欢迎来到果蔬城。我们的产品是新收获，洗盒准备好，终于从我们的家庭农场送到你家门口。</p>
+					<div class="footer-social">
+						<a href="#" data-toggle="tooltip" data-placement="top" title="微信"><i class="fa fa-weixin"></i></a>
+						<a href="#" data-toggle="tooltip" data-placement="top" title="微博"><i class="fa fa-weibo"></i></a>
+						<a href="#" data-toggle="tooltip" data-placement="top" title="相片分享"><i class="fa fa-pinterest"></i></a>
+						<a href="#" data-toggle="tooltip" data-placement="top" title="相片墙"><i class="fa fa-instagram"></i></a>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="widget">
+						<h3 class="widget-title">信息</h3>
+						<ul>
+							<li><a href="#">新产品</a></li>
+							<li><a href="#">畅销</a></li>
+							<li><a href="#">关于我们的店</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="widget">
+						<h3 class="widget-title">友情链接</h3>
+						<ul>
+							<li><a href="#">我们的团队</a></li>
+							<li><a href="#">关于我们</a></li>
+							<li><a href="#">安全购物</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="widget">
+						<h3 class="widget-title">订阅</h3>
+						<p>输入您的邮件地址为我们的邮件列表，以保持自己更新。</p>
+						<form class="newsletter">
+							<input type="email" name="EMAIL" placeholder="您的邮箱" required />
+							<button><i class="fa fa-paper-plane"></i></button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="copyright">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8"> Copyright &copy; 2017.Company name All rights reserved. </div>
+				<div class="col-md-4"> <img src="__PUBLIC__/home/images/footer_payment.png" alt="" /> </div>
+			</div>
+		</div>
+		<div class="backtotop" id="backtotop"></div>
+	</div>
+	
+</div>
+
+<script type="text/javascript" src="__PUBLIC__/home/js/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/home/js/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/home/js/bootstrap.min.js"></script>
+<!--<script type="text/javascript" src="__PUBLIC__/home/js/modernizr-2.7.1.min.js"></script>-->
+<script type="text/javascript" src="__PUBLIC__/home/js/owl.carousel.min.js"></script>
+<!--<script type="text/javascript" src="__PUBLIC__/home/js/jquery.countdown.min.js"></script>-->
+<script type="text/javascript" src="__PUBLIC__/home/js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="__PUBLIC__/home/js/jquery.prettyPhoto.init.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/home/js/script.js"></script>
+</body>
+</html>

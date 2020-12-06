@@ -1,0 +1,125 @@
+﻿<!doctype html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<link rel="stylesheet" href="__PUBLIC__/home/css/bootstrap.min.css" type="text/css" media="all">
+<link rel="stylesheet" href="__PUBLIC__/home/css/font-awesome.min.css" type="text/css" media="all" />
+<link rel="stylesheet" href="__PUBLIC__/home/css/ionicons.min.css" type="text/css" media="all" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/personal.css">
+<title>我的订单</title>
+<script src="__PUBLIC__/home/js/jquery.min.js"></script>
+<script src="__PUBLIC__/home/js/personal.js"></script>
+<script src="__PUBLIC__/home/js/area.js"></script>
+
+</head>
+<body>
+<div class="main">
+    <ul class="breadcrumbs">
+        <li>我的订单</li>
+        <li><a href="__APP__/hoem/user/user">会员中心</a></li>
+    </ul>
+	<div class="comment_list">
+      <div class="n_kql_dd">
+              <h2>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="none">
+                  <tr>
+                    <td width="12%"><!--<input name="" type="checkbox" value="" />--></td>
+                    <td width="25%" align="center">商品</td>
+                    <td width="11%" align="center">数量</td>
+                    <td width="16%" align="center"> 订单金额</td>
+                    <td width="12%" align="center">
+                    <form action="__APP__/home/order/orderlist" method="post">
+                    <select id="orderment" name="orderment">
+                    <option value="" <if condition="$orderment eq ''"> selected</if>>所有订单</option>
+                    <option value="待付款" <if condition="$orderment eq '待付款'"> selected</if>>待付款</option>
+                    <option value="待发货" <if condition="$orderment eq '待发货'"> selected</if>>待发货</option>
+                    <option value="确认收货" <if condition="$orderment eq '确认收货'"> selected</if>>待收货</option>
+                    <option value="完成" <if condition="$orderment eq '完成'"> selected</if>>完成</option>
+                    <option value="关闭" <if condition="$orderment eq '关闭'"> selected</if>>关闭</option>
+                    </select>
+                    </form>
+                    </td>
+                    <td width="10%" align="center">状态</td>
+                    <td width="11%" align="center">操作</td>
+                  </tr>
+                </table>
+              </h2>
+              <ul>
+              <if condition="$len eq 0">
+              <li>
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tr class="n_kql_dd_h3">
+                      <td height="40" colspan="7" bgcolor="#fbfaf8" style="text-align:center"> &nbsp;
+                       <!-- <input name="" type="checkbox" value="" />-->
+                       找不到订单哦！快去<a href="__APP__/home/product/product" target="_blank">购物中心</a>选购吧！
+                      </td>
+                    </tr>
+                </table>
+             </li>
+              </if>
+              <?php $i=0;$m=1;?>
+              <foreach name="data" item="vo">
+              	<if condition="$data[$i]['O_Num'] eq $data[$i-1]['O_Num']">
+                
+                <elseif condition="$data[$i]['O_Num'] neq $data[$i-1]['O_Num']"/>
+                  <li>
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tr class="n_kql_dd_h3">
+                      <td height="40" colspan="7" bgcolor="dcd9d9"> &nbsp;
+                      订单号：<i class="t_v_zhanghu_cor1">{$vo.O_Num}</i></td>
+                    </tr>
+                  </if>
+                    <tr>
+                      <td width="12%" height="98" style="position:relative;"><div class="n_kql_dd_img">
+                      <a href="__APP__/home/product/productinfo/Id/{$vo.PId}" target="_blank"><img src="__PUBLIC__/uploads/product_img/{$vo.Pproduct_img}" alt="" /></a>
+                      </div></td>
+                      <td width="25%" class="my_ordtit" valign="middle">{$vo.Pname}</td>
+                      <td width="11%" align="center" valign="middle" >{$vo.Pnum}</td>
+                      <td width="16%" align="center" valign="middle" class="t_n_xy_wz_cor">￥{$vo.Ol_pay}</td>
+                      <if condition="($data[$i]['Num'] eq '1') AND ($data[$i]['O_Num'] eq $data[$i-1]['O_Num'])">
+                      <else/>
+                      <td width="12%" align="center" valign="middle" rowspan="{$vo.Num}">{$vo.O_ptime}</td>
+                      <td width="10%" align="center" valign="middle" rowspan="{$vo.Num}">{$vo.O_ment}</td>
+                      <td width="11%" align="center" valign="middle" rowspan="{$vo.Num}"><div class="n_kql_dd_btn">
+                        <i><a href="__APP__/home/order/orderinfo/order_Num/{$vo.O_Num}" class="n_kql_dd_btna1">查看</a></i>
+                        <switch name="vo.O_ment">
+                            <case value="待付款">
+                            <i class="buy03"><a href="__APP__/home/order/pay/order_Num/{$vo.O_Num}">立即支付</a></i>
+                            <i class="buy04"><a href="__APP__/home/order/close/order_Num/{$vo.O_Num}" class="kql_dd_btn_hov">取消订单</a></i>
+                            </case>
+                            <case value="待发货"></case>
+                            <case value="确认收货">
+                            <i class="buy03"><a href="__APP__/home/order/getgoods/order_Num/{$vo.O_Num}">确认收货</a></i>
+                            </case>
+                            <case value="完成">
+                            <!--<i class="buy03"><a href="__APP__/home/order/close/order_Num/{$vo.O_Num}">再次购买</a></i>-->
+                            <i class="buy04"><a href="__APP__/home/order/del/order_Num/{$vo.O_Num}">删除订单</a></i>
+                            </case>
+                            <case value="关闭">
+                            <!--<i class="buy03"><a href="__APP__/home/order/close/order_Num/{$vo.O_Num}">再次购买</a></i>-->
+                            <i class="buy04"><a href="__APP__/home/order/del/order_Num/{$vo.O_Num}">删除订单</a></i>
+                            </case>
+                            <default />
+                        </switch>
+                      </div>
+                      </td>
+                      </if>
+                    </tr>
+                    <if condition="$data[$i]['O_Num'] eq $data[$i+1]['O_Num']">
+                    <elseif condition="$data[$i]['O_Num'] neq $data[$i+1]['O_Num']"/>
+                    </table>
+                </li>
+                    </if>
+                <?php $i++;?>
+                </foreach>
+              </ul>
+      </div>
+      
+  </div>
+  <div class="pagination"> 
+    {$page}
+  </div>
+</div>
+</body>
+</html>

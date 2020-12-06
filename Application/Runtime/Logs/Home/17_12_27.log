@@ -1,0 +1,536 @@
+[ 2017-12-27T16:29:11+08:00 ] 127.0.0.1 /my_mall/home/order/orderlist
+ERR: XMLÊ†áÁ≠æËØ≠Ê≥ïÈîôËØØ : condition="$data[$i]['O_Num'] neq $data[$i-1]['O_Num']"/
+
+[ 2017-12-27T16:30:01+08:00 ] 127.0.0.1 /my_mall/home/order/orderlist
+ERR: XMLÊ†áÁ≠æËØ≠Ê≥ïÈîôËØØ : condition="$data[$i]['O_Num'] neq $data[$i-1]['O_Num']"/
+
+[ 2017-12-27T16:30:03+08:00 ] 127.0.0.1 /my_mall/home/order/orderlist
+ERR: XMLÊ†áÁ≠æËØ≠Ê≥ïÈîôËØØ : condition="$data[$i]['O_Num'] neq $data[$i-1]['O_Num']"/
+
+[ 2017-12-27T16:30:03+08:00 ] 127.0.0.1 /my_mall/home/order/orderlist
+ERR: XMLÊ†áÁ≠æËØ≠Ê≥ïÈîôËØØ : condition="$data[$i]['O_Num'] neq $data[$i-1]['O_Num']"/
+
+[ 2017-12-27T16:30:04+08:00 ] 127.0.0.1 /my_mall/home/order/orderlist
+ERR: XMLÊ†áÁ≠æËØ≠Ê≥ïÈîôËØØ : condition="$data[$i]['O_Num'] neq $data[$i-1]['O_Num']"/
+
+[ 2017-12-27T16:31:02+08:00 ] 127.0.0.1 /my_mall/home/order/orderlist
+ERR: XMLÊ†áÁ≠æËØ≠Ê≥ïÈîôËØØ : condition="$data[$i]['O_Num'] neq $data[$i-1]['O_Num']"/
+
+[ 2017-12-27T16:31:02+08:00 ] 127.0.0.1 /my_mall/home/order/orderlist
+ERR: XMLÊ†áÁ≠æËØ≠Ê≥ïÈîôËØØ : condition="$data[$i]['O_Num'] neq $data[$i-1]['O_Num']"/
+
+[ 2017-12-27T16:31:02+08:00 ] 127.0.0.1 /my_mall/home/order/orderlist
+ERR: XMLÊ†áÁ≠æËØ≠Ê≥ïÈîôËØØ : condition="$data[$i]['O_Num'] neq $data[$i-1]['O_Num']"/
+
+[ 2017-12-27T17:11:53+08:00 ] 127.0.0.1 /my_mall/home/order/orderlist
+ERR: XMLÊ†áÁ≠æËØ≠Ê≥ïÈîôËØØ : condition="$data[$i]['num'] neq $data[$i+1]['num']"/
+
+[ 2017-12-27T18:30:10+08:00 ] 127.0.0.1 /my_mall/home/shopcar/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001153s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001983s ]
+SQL: SHOW COLUMNS FROM `ms_shopcar` [ RunTime:0.017624s ]
+SQL: SELECT * FROM `ms_shopcar` WHERE `pro_Id` = 22 AND `user_Name` = 'qcx120' LIMIT 1   [ RunTime:0.000384s ]
+SQL: INSERT INTO `ms_shopcar` (`user_Name`,`pro_Id`,`pro_num`,`addtime`) VALUES ('qcx120',22,1,'2017-12-27 18:30:10') [ RunTime:0.238145s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ms_shopcar` WHERE `user_Name` = 'qcx120' LIMIT 1   [ RunTime:0.001344s ]
+SQL: SELECT ms_shopcar.*,ms_shopcar.Id as sId,ms_product.name as Pname,ms_product.product_img as product_img,ms_product.here_price as Phere_price,ms_product.machete_price as Pmachete_price,ms_product.sales_vol as Psales_vol,ms_category.name as PCName FROM `ms_shopcar` INNER JOIN ms_product ON ms_shopcar.pro_Id = ms_product.Id INNER JOIN ms_category ON ms_category.Id = ms_product.classId  WHERE `pro_Id` = '22' AND `user_Name` = 'qcx120' ORDER BY ms_shopcar.addtime desc LIMIT 0,2   [ RunTime:0.020922s ]
+
+[ 2017-12-27T20:16:00+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002849s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008117s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.026297s ]
+SQL: SELECT * FROM `ms_address` WHERE `Id` = 5 LIMIT 1   [ RunTime:0.000716s ]
+
+[ 2017-12-27T20:16:16+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001885s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007676s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.026520s ]
+SQL: UPDATE `ms_address` SET `name`='dass',`address_province`='ËæΩÂÆÅÁú\Å',`address_city`='ÊäöÈ°∫Â∏\Ç',`address_county`='ÊäöÈ°∫Âé\ø',`address_info`='ssdfsd',`phonenumber`='15200965961',`postcode`='420026' WHERE `Id` = 5 [ RunTime:0.028886s ]
+
+[ 2017-12-27T20:16:22+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=6
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000945s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001789s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.032724s ]
+SQL: SELECT * FROM `ms_address` WHERE `Id` = 6 LIMIT 1   [ RunTime:0.000514s ]
+
+[ 2017-12-27T20:16:26+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002072s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.019884s ]
+SQL: UPDATE `ms_address` SET `name`='ÁûøÊâçÂÖ\à',`address_province`='Â±±Ë•øÁú\Å',`address_city`='ÈïøÊ≤ªÂ∏\Ç',`address_county`='Ë•ÑÂû£Âé\ø',`address_info`='Êó∂Èó¥ÂÄíËÆ°Êó\∂',`phonenumber`='15233659658',`postcode`='256355' WHERE `Id` = 6 [ RunTime:0.000493s ]
+
+[ 2017-12-27T20:16:29+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=11
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000945s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001771s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.031688s ]
+SQL: SELECT * FROM `ms_address` WHERE `Id` = 11 LIMIT 1   [ RunTime:0.000463s ]
+
+[ 2017-12-27T20:16:32+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000983s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001798s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.019299s ]
+SQL: UPDATE `ms_address` SET `name`='ÁûøÊâçÂÖ\à',`address_province`='ÂÜÖËíôÂè\§',`address_city`='ËØ∑ÈÄâÊã©',`address_county`='ËØ∑ÈÄâÊã©',`address_info`='Êó∂Èó¥ÂÄíËÆ°',`phonenumber`='15233659658',`postcode`='256355' WHERE `Id` = 11 [ RunTime:0.000545s ]
+
+[ 2017-12-27T20:16:52+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=6
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006998s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.045573s ]
+SQL: SELECT * FROM `ms_address` WHERE `Id` = 6 LIMIT 1   [ RunTime:0.001589s ]
+
+[ 2017-12-27T20:17:03+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=6
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003057s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.017298s ]
+SQL: SELECT * FROM `ms_address` WHERE `Id` = 6 LIMIT 1   [ RunTime:0.001786s ]
+
+[ 2017-12-27T20:17:10+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=6
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000975s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002642s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.017417s ]
+SQL: SELECT * FROM `ms_address` WHERE `Id` = 6 LIMIT 1   [ RunTime:0.000413s ]
+
+[ 2017-12-27T20:17:58+08:00 ] 127.0.0.1 /my_mall/home/address/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004578s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.023058s ]
+SQL: SELECT `Id` FROM `ms_address` WHERE `user_Name` = 'qcx120' AND `ismoren` = 'Êò\Ø' LIMIT 1   [ RunTime:0.000633s ]
+SQL: UPDATE `ms_address` SET `ismoren`='Âê\¶' WHERE `Id` = 11 [ RunTime:0.000343s ]
+SQL: INSERT INTO `ms_address` (`name`,`address_province`,`address_city`,`address_county`,`address_info`,`phonenumber`,`postcode`,`ismoren`,`Id`,`addtime`,`user_Name`) VALUES ('ÁöÑÊ≠åÂ£\∞','Â§©Ê¥•Â∏\Ç','Â§©Ê¥•Â∏\Ç','Ê≤≥‰∏úÂå\∫','‰∏âÂõΩÊùÄ','15200965961','663526','Êò\Ø',0,'2017-12-27 20:17:58','qcx120') [ RunTime:0.000312s ]
+
+[ 2017-12-27T20:35:57+08:00 ] 127.0.0.1 /my_mall/home/address/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001710s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.016587s ]
+SQL: SELECT `Id` FROM `ms_address` WHERE `user_Name` = 'qcx120' AND `ismoren` = 'Êò\Ø' LIMIT 1   [ RunTime:0.000550s ]
+SQL: UPDATE `ms_address` SET `ismoren`='Âê\¶' WHERE `Id` = 14 [ RunTime:0.000590s ]
+SQL: INSERT INTO `ms_address` (`name`,`address_province`,`address_city`,`address_county`,`address_info`,`phonenumber`,`postcode`,`ismoren`,`Id`,`addtime`,`user_Name`) VALUES ('È°∫‰∏∞ÈÄüÈÄ\í','Â±±Ë•øÁú\Å','ÂøªÂ∑ûÂ∏\Ç','‰ª£Âéø','Ê†ºÂºè','15974066068','523654','Êò\Ø',0,'2017-12-27 20:35:57','qcx120') [ RunTime:0.001429s ]
+
+[ 2017-12-27T20:37:41+08:00 ] 127.0.0.1 /my_mall/home/address/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002175s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.018090s ]
+SQL: SELECT `Id` FROM `ms_address` WHERE `user_Name` = 'qcx120' AND `ismoren` = 'Êò\Ø' LIMIT 1   [ RunTime:0.000440s ]
+SQL: UPDATE `ms_address` SET `ismoren`='Âê\¶' WHERE `Id` = 15 [ RunTime:0.000405s ]
+SQL: INSERT INTO `ms_address` (`name`,`address_province`,`address_city`,`address_county`,`address_info`,`phonenumber`,`postcode`,`ismoren`,`Id`,`addtime`,`user_Name`) VALUES ('Êôö‰∏ä','‰∏äÊµ∑Â∏\Ç','‰∏äÊµ∑Â∏\Ç','ÊôÆÈôÄÂå\∫','ÈÄíÂõõÊñπÈÄüÈÄ\í','15200962563','962563','Êò\Ø',0,'2017-12-27 20:37:41','qcx120') [ RunTime:0.000448s ]
+
+[ 2017-12-27T20:38:20+08:00 ] 127.0.0.1 /my_mall/home/address/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002949s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.016328s ]
+SQL: SELECT `Id` FROM `ms_address` WHERE `user_Name` = 'qcx120' AND `ismoren` = 'Êò\Ø' LIMIT 1   [ RunTime:0.000735s ]
+SQL: INSERT INTO `ms_address` (`name`,`address_province`,`address_city`,`address_county`,`address_info`,`phonenumber`,`postcode`,`ismoren`,`Id`,`addtime`,`user_Name`) VALUES ('ÊòØÂ∏àÂÇ\Ö','Ê±üË•øÁú\Å','ÂÆúÊò•Â∏\Ç','Ê∞∏ÂÆÅÈï\á','ÊòØÁöÑ','15263258745','258745','Êò\Ø',0,'2017-12-27 20:38:20','qcx120') [ RunTime:0.000447s ]
+
+[ 2017-12-27T20:38:31+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=6
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003540s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.027968s ]
+SQL: SELECT * FROM `ms_address` WHERE `Id` = 6 LIMIT 1   [ RunTime:0.002059s ]
+
+[ 2017-12-27T20:40:33+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=17
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001796s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.068263s ]
+SQL: SELECT * FROM `ms_address` WHERE `Id` = 17 LIMIT 1   [ RunTime:0.000422s ]
+
+[ 2017-12-27T20:40:44+08:00 ] 127.0.0.1 /my_mall/home/address/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004323s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.042303s ]
+
+[ 2017-12-27T20:41:11+08:00 ] 127.0.0.1 /my_mall/home/address/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001909s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.015893s ]
+SQL: INSERT INTO `ms_address` (`name`,`address_province`,`address_city`,`address_county`,`address_info`,`phonenumber`,`postcode`,`Id`,`addtime`,`user_Name`) VALUES ('Êò\Ø','Âåó‰∫¨Â∏\Ç','Âåó‰∫¨Â∏\Ç','ÂÆ£Ê≠¶Âå\∫','Ëâ\≤','15963256541','159632',0,'2017-12-27 20:41:11','qcx120') [ RunTime:0.000661s ]
+
+[ 2017-12-27T20:41:55+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=17
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000905s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001587s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.015314s ]
+SQL: SELECT * FROM `ms_address` WHERE `Id` = 17 LIMIT 1   [ RunTime:0.002322s ]
+
+[ 2017-12-27T20:41:58+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001821s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.033446s ]
+SQL: UPDATE `ms_address` SET `name`='ÊòØÂ∏àÂÇ\Ö',`address_province`='Ê±üË•øÁú\Å',`address_city`='ÂÆúÊò•Â∏\Ç',`address_county`='Ê∞∏ÂÆÅÈï\á',`address_info`='ÊòØÁöÑ',`phonenumber`='15263258745',`postcode`='258745' WHERE `Id` = 17 [ RunTime:0.000532s ]
+
+[ 2017-12-27T20:42:07+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005959s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.036023s ]
+SQL: SELECT * FROM `ms_address` WHERE `Id` = 5 LIMIT 1   [ RunTime:0.000725s ]
+
+[ 2017-12-27T20:42:12+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=18
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004776s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.024015s ]
+SQL: SELECT * FROM `ms_address` WHERE `Id` = 18 LIMIT 1   [ RunTime:0.002721s ]
+
+[ 2017-12-27T20:42:14+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003721s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.021647s ]
+SQL: UPDATE `ms_address` SET `name`='Êò\Ø',`address_province`='Âåó‰∫¨Â∏\Ç',`address_city`='Âåó‰∫¨Â∏\Ç',`address_county`='ÂÆ£Ê≠¶Âå\∫',`address_info`='Ëâ\≤',`phonenumber`='15963256541',`postcode`='159632' WHERE `Id` = 18 [ RunTime:0.000532s ]
+
+[ 2017-12-27T20:42:17+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=18
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000957s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001815s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.017406s ]
+SQL: SELECT * FROM `ms_address` WHERE `Id` = 18 LIMIT 1   [ RunTime:0.000472s ]
+
+[ 2017-12-27T20:42:22+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001736s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.032124s ]
+SQL: UPDATE `ms_address` SET `name`='Êò\Ø',`address_province`='Âåó‰∫¨Â∏\Ç',`address_city`='Âåó‰∫¨Â∏\Ç',`address_county`='ÂÆ£Ê≠¶Âå\∫',`address_info`='Ëâ\≤',`phonenumber`='15963256541',`postcode`='159633' WHERE `Id` = 18 [ RunTime:0.000447s ]
+
+[ 2017-12-27T20:42:27+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=18
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002084s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003482s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.024559s ]
+SQL: SELECT * FROM `ms_address` WHERE `Id` = 18 LIMIT 1   [ RunTime:0.000774s ]
+
+[ 2017-12-27T20:42:32+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006533s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.033739s ]
+SQL: UPDATE `ms_address` SET `name`='Êò\Ø',`address_province`='Âåó‰∫¨Â∏\Ç',`address_city`='Âåó‰∫¨Â∏\Ç',`address_county`='ÂÆ£Ê≠¶Âå\∫',`address_info`='Ëâ\≤',`phonenumber`='15963256541',`postcode`='159666' WHERE `Id` = 18 [ RunTime:0.000380s ]
+
+[ 2017-12-27T20:46:50+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=6
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007039s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.021161s ]
+SQL: SELECT * FROM `ms_address` WHERE `Id` = 6 LIMIT 1   [ RunTime:0.000556s ]
+
+[ 2017-12-27T20:46:52+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002825s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.036811s ]
+SQL: UPDATE `ms_address` SET `ismoren`='Âê\¶' WHERE `user_Name` = 'qcx120' [ RunTime:0.000656s ]
+SQL: UPDATE `ms_address` SET `name`='ÁûøÊâçÂÖ\à',`address_province`='Â±±Ë•øÁú\Å',`address_city`='ÈïøÊ≤ªÂ∏\Ç',`address_county`='Ë•ÑÂû£Âé\ø',`address_info`='Êó∂Èó¥ÂÄíËÆ°Êó\∂',`phonenumber`='15233659658',`postcode`='256355',`ismoren`='Êò\Ø' WHERE `Id` = 6 [ RunTime:0.000479s ]
+
+[ 2017-12-27T20:47:16+08:00 ] 127.0.0.1 /my_mall/home/address/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002505s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.075342s ]
+SQL: UPDATE `ms_address` SET `ismoren`='Âê\¶' WHERE `user_Name` = 'qcx120' [ RunTime:0.002618s ]
+SQL: INSERT INTO `ms_address` (`name`,`address_province`,`address_city`,`address_county`,`address_info`,`phonenumber`,`postcode`,`ismoren`,`Id`,`addtime`,`user_Name`) VALUES ('ÊòØÁöÑÊ≥ïÂÆö','Âåó‰∫¨Â∏\Ç','Âåó‰∫¨Â∏\Ç','‰∏úÂüéÂå\∫','‰∏â‰∏™','15233652589','152336','Êò\Ø',0,'2017-12-27 20:47:16','qcx120') [ RunTime:0.000657s ]
+
+[ 2017-12-27T20:49:24+08:00 ] 127.0.0.1 /my_mall/home/address/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004412s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.024724s ]
+SQL: UPDATE `ms_address` SET `ismoren`='Âê\¶' WHERE `user_Name` = 'qcx120' [ RunTime:0.000714s ]
+
+[ 2017-12-27T20:50:42+08:00 ] 127.0.0.1 /my_mall/home/address/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006951s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.024261s ]
+SQL: UPDATE `ms_address` SET `ismoren`='Âê\¶' WHERE `user_Name` = 'qcx120' [ RunTime:0.000589s ]
+
+[ 2017-12-27T20:51:00+08:00 ] 127.0.0.1 /my_mall/home/address/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000905s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001683s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.061718s ]
+SQL: INSERT INTO `ms_address` (`name`,`address_province`,`address_city`,`address_county`,`address_info`,`phonenumber`,`postcode`,`Id`,`addtime`,`user_Name`) VALUES ('ÁÆóÂæó‰∏äÊòØ','Âåó‰∫¨Â∏\Ç','Âåó‰∫¨Â∏\Ç','Ë•øÂüéÂå\∫','ÂÖ¨Âè∏Â§\ß','15525631254','631254',0,'2017-12-27 20:51:00','qcx120') [ RunTime:0.000385s ]
+
+[ 2017-12-27T20:56:44+08:00 ] 127.0.0.1 /my_mall/home/address/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002127s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004321s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.027387s ]
+SQL: UPDATE `ms_address` SET `ismoren`='Âê\¶' WHERE `user_Name` = 'qcx120' [ RunTime:0.002197s ]
+SQL: INSERT INTO `ms_address` (`name`,`address_province`,`address_city`,`address_county`,`address_info`,`phonenumber`,`postcode`,`ismoren`,`Id`,`addtime`,`user_Name`) VALUES ('ad','Âåó‰∫¨Â∏\Ç','Âåó‰∫¨Â∏\Ç','‰∏úÂüéÂå\∫','Êåâ‰∏™','15326845896','256321','Êò\Ø',0,'2017-12-27 20:56:44','qcx120') [ RunTime:0.000512s ]
+
+[ 2017-12-27T20:57:36+08:00 ] 127.0.0.1 /my_mall/home/address/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001745s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.038009s ]
+SQL: UPDATE `ms_address` SET `ismoren`='Âê\¶' WHERE `user_Name` = 'qcx120' [ RunTime:0.000434s ]
+SQL: INSERT INTO `ms_address` (`name`,`address_province`,`address_city`,`address_county`,`address_info`,`phonenumber`,`postcode`,`ismoren`,`Id`,`addtime`,`user_Name`) VALUES ('ÊàëÈÉΩÊò\Ø','Â§©Ê¥•Â∏\Ç','Â§©Ê¥•Â∏\Ç','Ê≤≥‰∏úÂå\∫','Á¨¨‰∏â‰∏\™','15200965961','965961','Êò\Ø',0,'2017-12-27 20:57:36','qcx120') [ RunTime:0.000308s ]
+
+[ 2017-12-27T20:58:17+08:00 ] 127.0.0.1 /my_mall/home/address/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000901s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001679s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.053168s ]
+SQL: UPDATE `ms_address` SET `ismoren`='Âê\¶' WHERE `user_Name` = 'qcx120' [ RunTime:0.000430s ]
+SQL: INSERT INTO `ms_address` (`name`,`address_province`,`address_city`,`address_county`,`address_info`,`phonenumber`,`postcode`,`ismoren`,`Id`,`addtime`,`user_Name`) VALUES ('Â§ö‰∏™','Á¶èÂª∫Áú\Å','ÈæôÂ≤©Â∏\Ç','Âπ≥Â∑ùÈï\á','Â§ö‰∏™','15236523698','523698','Êò\Ø',0,'2017-12-27 20:58:17','qcx120') [ RunTime:0.000332s ]
+
+[ 2017-12-27T20:58:50+08:00 ] 127.0.0.1 /my_mall/home/address/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002115s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.033810s ]
+SQL: UPDATE `ms_address` SET `ismoren`='Âê\¶' WHERE `user_Name` = 'qcx120' [ RunTime:0.001758s ]
+SQL: INSERT INTO `ms_address` (`name`,`address_province`,`address_city`,`address_county`,`address_info`,`phonenumber`,`postcode`,`ismoren`,`Id`,`addtime`,`user_Name`) VALUES ('‰ΩÜÊòØ','Âåó‰∫¨Â∏\Ç','Âåó‰∫¨Â∏\Ç','‰∏úÂüéÂå\∫','Ê†ºÂºè','15200965961','965961','Êò\Ø',0,'2017-12-27 20:58:50','qcx120') [ RunTime:0.000477s ]
+
+[ 2017-12-27T21:09:36+08:00 ] 127.0.0.1 /my_mall/home/address/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001752s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003310s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.045519s ]
+
+[ 2017-12-27T21:09:58+08:00 ] 127.0.0.1 /my_mall/home/address/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006945s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.038904s ]
+SQL: INSERT INTO `ms_address` (`name`,`address_province`,`address_city`,`address_county`,`address_info`,`phonenumber`,`postcode`,`Id`,`addtime`,`user_Name`) VALUES ('ÂçÅÂ§ö‰∏\™','Â§©Ê¥•Â∏\Ç','Â§©Ê¥•Â∏\Ç','ÂíåÂπ≥Âå\∫','ÂçÅÂ§ö‰∏\™','15233652564','652564',0,'2017-12-27 21:09:58','qcx120') [ RunTime:0.000600s ]
+
+[ 2017-12-27T21:14:16+08:00 ] 127.0.0.1 /my_mall/home/address/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007517s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.015360s ]
+SQL: UPDATE `ms_address` SET `ismoren`='Âê\¶' WHERE `user_Name` = 'qcx120' [ RunTime:0.000643s ]
+SQL: INSERT INTO `ms_address` (`name`,`address_province`,`address_city`,`address_county`,`address_info`,`phonenumber`,`postcode`,`ismoren`,`Id`,`addtime`,`user_Name`) VALUES ('ÊòØÁöÑ','Âåó‰∫¨Â∏\Ç','Âåó‰∫¨Â∏\Ç','ÊúùÈò≥Âå\∫','Â§ö‰∏™','15233656985','152336','Êò\Ø',0,'2017-12-27 21:14:16','qcx120') [ RunTime:0.000280s ]
+
+[ 2017-12-27T21:16:34+08:00 ] 127.0.0.1 /my_mall/home/address/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004668s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.032508s ]
+SQL: UPDATE `ms_address` SET `ismoren`='Âê\¶' WHERE `user_Name` = 'qcx120' [ RunTime:0.000502s ]
+SQL: INSERT INTO `ms_address` (`name`,`address_province`,`address_city`,`address_county`,`address_info`,`phonenumber`,`postcode`,`ismoren`,`Id`,`addtime`,`user_Name`) VALUES ('Âú∞Êñπ','‰∏äÊµ∑Â∏\Ç','‰∏äÊµ∑Â∏\Ç','Èó∏ÂåóÂå\∫','ÁîµÊîæË¥\π','15974066068','660686','Êò\Ø',0,'2017-12-27 21:16:34','qcx120') [ RunTime:0.001168s ]
+
+[ 2017-12-27T21:19:28+08:00 ] 127.0.0.1 /my_mall/home/address/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003496s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.023676s ]
+SQL: UPDATE `ms_address` SET `ismoren`='Âê\¶' WHERE `user_Name` = 'qcx120' [ RunTime:0.000547s ]
+SQL: INSERT INTO `ms_address` (`name`,`address_province`,`address_city`,`address_county`,`address_info`,`phonenumber`,`postcode`,`ismoren`,`Id`,`addtime`,`user_Name`) VALUES ('Â§öÂ∞ëÂ≤\Å','ËæΩÂÆÅÁú\Å','ÊäöÈ°∫Â∏\Ç','Êñ∞ÂÆæÊª°ÊóèËá™Ê≤ªÂé\ø','ÁöÑÊòØÊ†πÊ∑±ËíÇÂõ∫','15974066068','425508','Êò\Ø',0,'2017-12-27 21:19:28','qcx120') [ RunTime:0.000369s ]
+
+[ 2017-12-27T22:15:26+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002142s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.016424s ]
+SQL: SELECT * FROM `ms_address` WHERE `Id` = 25 LIMIT 1   [ RunTime:0.000523s ]
+
+[ 2017-12-27T22:15:30+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003161s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.077799s ]
+SQL: SELECT * FROM `ms_address` WHERE `Id` = 1 LIMIT 1   [ RunTime:0.000460s ]
+
+[ 2017-12-27T22:15:32+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004102s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.032199s ]
+SQL: UPDATE `ms_address` SET `ismoren`='Âê\¶' WHERE `user_Name` = 'qcx120' [ RunTime:0.000432s ]
+
+[ 2017-12-27T22:15:38+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003430s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.016479s ]
+SQL: SELECT * FROM `ms_address` WHERE `Id` = 1 LIMIT 1   [ RunTime:0.000396s ]
+
+[ 2017-12-27T22:15:39+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004894s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.014043s ]
+SQL: UPDATE `ms_address` SET `ismoren`='Âê\¶' WHERE `user_Name` = 'qcx120' [ RunTime:0.000450s ]
+
+[ 2017-12-27T22:16:34+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002412s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.015598s ]
+SQL: SELECT * FROM `ms_address` WHERE `Id` = 1 LIMIT 1   [ RunTime:0.001435s ]
+
+[ 2017-12-27T22:16:38+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000947s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001626s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.017840s ]
+SQL: UPDATE `ms_address` SET `ismoren`='Âê\¶' WHERE `user_Name` = 'qcx120' [ RunTime:0.000357s ]
+
+[ 2017-12-27T22:16:45+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002506s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.034041s ]
+SQL: SELECT * FROM `ms_address` WHERE `Id` = 1 LIMIT 1   [ RunTime:0.000407s ]
+
+[ 2017-12-27T22:17:42+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001181s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001975s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.033653s ]
+SQL: UPDATE `ms_address` SET `ismoren`='Âê\¶' WHERE `user_Name` = 'qcx120' [ RunTime:0.000868s ]
+
+[ 2017-12-27T22:17:45+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001637s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.014067s ]
+SQL: SELECT * FROM `ms_address` WHERE `Id` = 1 LIMIT 1   [ RunTime:0.001709s ]
+
+[ 2017-12-27T22:17:50+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001861s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.035651s ]
+SQL: SELECT * FROM `ms_address` WHERE `Id` = 1 LIMIT 1   [ RunTime:0.000390s ]
+
+[ 2017-12-27T22:17:56+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001692s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.031827s ]
+SQL: UPDATE `ms_address` SET `ismoren`='Âê\¶' WHERE `user_Name` = 'qcx120' [ RunTime:0.000339s ]
+
+[ 2017-12-27T22:20:44+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002119s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.051479s ]
+SQL: SELECT * FROM `ms_address` WHERE `Id` = 25 LIMIT 1   [ RunTime:0.001188s ]
+
+[ 2017-12-27T22:20:46+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003016s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.015823s ]
+SQL: UPDATE `ms_address` SET `ismoren`='Âê\¶' WHERE `user_Name` = 'qcx120' [ RunTime:0.000410s ]
+
+[ 2017-12-27T22:20:51+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002107s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.015085s ]
+SQL: SELECT * FROM `ms_address` WHERE `Id` = 25 LIMIT 1   [ RunTime:0.000432s ]
+
+[ 2017-12-27T22:20:54+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003910s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.032608s ]
+SQL: SELECT * FROM `ms_address` WHERE `Id` = 1 LIMIT 1   [ RunTime:0.001614s ]
+
+[ 2017-12-27T22:21:00+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007606s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.016792s ]
+SQL: UPDATE `ms_address` SET `ismoren`='Âê\¶' WHERE `user_Name` = 'qcx120' [ RunTime:0.000798s ]
+
+[ 2017-12-27T22:22:21+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000915s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001681s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.016229s ]
+SQL: SELECT * FROM `ms_address` WHERE `Id` = 1 LIMIT 1   [ RunTime:0.000461s ]
+
+[ 2017-12-27T22:22:24+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000981s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001718s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.068800s ]
+SQL: UPDATE `ms_address` SET `ismoren`='Âê\¶' WHERE `user_Name` = 'qcx120' [ RunTime:0.000373s ]
+
+[ 2017-12-27T22:22:58+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000981s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002587s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.055299s ]
+SQL: SELECT * FROM `ms_address` WHERE `Id` = 25 LIMIT 1   [ RunTime:0.001232s ]
+
+[ 2017-12-27T22:23:02+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002916s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.015731s ]
+SQL: UPDATE `ms_address` SET `name`='ÂçÅÂ§ö‰∏\™',`address_province`='Â§©Ê¥•Â∏\Ç',`address_city`='Â§©Ê¥•Â∏\Ç',`address_county`='ÂíåÂπ≥Âå\∫',`address_info`='ÂçÅÂ§ö‰∏\™11',`phonenumber`='15233652564',`postcode`='652564' WHERE `Id` = 25 [ RunTime:0.000407s ]
+
+[ 2017-12-27T22:23:05+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=24
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006522s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.016484s ]
+SQL: SELECT * FROM `ms_address` WHERE `Id` = 24 LIMIT 1   [ RunTime:0.000772s ]
+
+[ 2017-12-27T22:23:05+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=24
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000997s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002039s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.018986s ]
+SQL: SELECT * FROM `ms_address` WHERE `Id` = 24 LIMIT 1   [ RunTime:0.000470s ]
+
+[ 2017-12-27T22:23:11+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002611s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.014182s ]
+SQL: UPDATE `ms_address` SET `ismoren`='Âê\¶' WHERE `user_Name` = 'qcx120' [ RunTime:0.002581s ]
+
+[ 2017-12-27T22:24:17+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004060s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.035837s ]
+SQL: SELECT * FROM `ms_address` WHERE `Id` = 1 LIMIT 1   [ RunTime:0.001099s ]
+
+[ 2017-12-27T22:24:19+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000979s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001788s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.032585s ]
+SQL: UPDATE `ms_address` SET `ismoren`='Âê\¶' WHERE `user_Name` = 'qcx120' [ RunTime:0.000394s ]
+SQL: UPDATE `ms_address` SET `name`='ÂéªÊì¶Ê¥\ó',`address_province`='ÊπñÂçóÁú\Å',`address_city`='ÈÉ¥Â∑ûÂ∏\Ç',`address_county`='ÂüéÂÖ≥Èï\á',`address_info`='Â§ö‰∏™Âú∞ÊñπËßÑËåÉÁöÑÂú∞',`phonenumber`='15200965961',`postcode`='425999',`ismoren`='Êò\Ø' WHERE `Id` = 1 [ RunTime:0.000333s ]
+
+[ 2017-12-27T22:24:23+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003288s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.016506s ]
+SQL: SELECT * FROM `ms_address` WHERE `Id` = 25 LIMIT 1   [ RunTime:0.000431s ]
+
+[ 2017-12-27T22:24:25+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001591s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.014074s ]
+SQL: UPDATE `ms_address` SET `ismoren`='Âê\¶' WHERE `user_Name` = 'qcx120' [ RunTime:0.002906s ]
+SQL: UPDATE `ms_address` SET `name`='ÂçÅÂ§ö‰∏\™',`address_province`='Â§©Ê¥•Â∏\Ç',`address_city`='Â§©Ê¥•Â∏\Ç',`address_county`='ÂíåÂπ≥Âå\∫',`address_info`='ÂçÅÂ§ö‰∏\™11',`phonenumber`='15233652564',`postcode`='652564',`ismoren`='Êò\Ø' WHERE `Id` = 25 [ RunTime:0.001513s ]
+

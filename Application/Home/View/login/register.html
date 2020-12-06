@@ -1,0 +1,354 @@
+﻿<!doctype html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<title>注册</title>
+
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/bootstrap.min.css">
+<link rel="stylesheet" href="__PUBLIC__/home/css/font-awesome.min.css" type="text/css" media="all" />
+<link rel="stylesheet" href="__PUBLIC__/home/css/ionicons.min.css" type="text/css" media="all" />
+<link rel="stylesheet" href="__PUBLIC__/home/css/style.css" type="text/css" media="all">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/gloab.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/index.css">
+<link rel="stylesheet" href="__PUBLIC__/home/css/custom.css" type="text/css" media="all">
+
+<script src="__PUBLIC__/home/js/jquery-1.11.1.min.js"></script>
+<script src="__PUBLIC__/home/js/register.js"></script>
+<script type="text/javascript" src="__PUBLIC__/home/js/script.js"></script>
+</head>
+<body>
+
+<div id="menu-slideout" class="slideout-menu hidden-md-up">
+	<div class="mobile-menu">
+		<ul id="mobile-menu" class="menu">
+			<li><a href="__ROOT__">首页</a></li>
+			<li><a href="__APP__/home/product/product">购物中心</a></li>
+			<li><a href="__APP__/home/index/aboutus">关于我们</a></li>
+			<li><a href="__APP__/home/index/contactus">联系我们</a></li>
+		</ul>
+	</div>
+</div>
+<div class="site">
+	<div class="topbar">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="topbar-text">
+						<span>营业时间: 8:00-21:00</span> 
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="topbar-menu">
+						<ul class="topbar-menu">
+							<li><a href="__APP__/home/user/user">个人中心</a></li>
+                            <if condition="$_SESSION['user'] eq ''">
+							<li><a href="__APP__/home/login/login">登录</a></li>
+							<li><a href="__APP__/home/login/register">注册</a></li>
+                            <else /> 
+                            <li><a href="__APP__/home/login/cancellation">切换</a></li>
+							<li><a href="__APP__/home/login/quit">退出</a></li>
+                            </if>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<header id="header" class="header header-desktop header-2">
+		<div class="top-search">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<form action="__APP__/home/product/product" method="post">
+							<input type="search" class="top-search-input" name="name" placeholder="您的想法" /><button type="submit">搜索</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<a href="__ROOT__" id="logo"> <img class="logo-image" src="__PUBLIC__/home/images/logo.png" alt="Organik Logo" /> </a>
+				</div>
+				<div class="col-md-9">
+					<div class="header-right">
+						<nav class="menu">
+							<ul class="main-menu">
+                                <li><a href="__APP__/home/index/index">首页</a></li>
+                                <li><a href="__APP__/home/product/product">购物中心</a></li>
+                                <li><a href="__APP__/home/index/aboutus">关于我们</a></li>
+                                <li><a href="__APP__/home/index/contactus">联系我们</a></li>
+							</ul>
+						</nav>
+						<div class="btn-wrap">
+							<div class="mini-cart-wrap">
+								<div class="mini-cart">
+									<div class="mini-cart-icon" data-count="{$allshopcar}">
+										<i class="ion-bag"></i>
+									</div>
+								</div>
+								<div class="widget-shopping-cart-content">
+									<ul class="cart-list">
+                                    <foreach name="minishopcar" item="vmns">
+										<li>
+											<a href="__APP__/home/product/productinfo/Id/{$vmns.pro_Id}">
+												<img src="__PUBLIC__/uploads/product_img/{$vmns.Pimg}" alt="" /> {$vmns.Pname}&nbsp;
+											</a>
+											<span class="quantity">{$vmns.pro_num} × ￥{$vmns.PHprice}</span>
+										</li>
+                                    </foreach>
+									</ul>
+									<p class="buttons"> <a href="__APP__/home/shopcar/shopcar" class="view-cart">进入购物车查看更多</a> </p>
+								</div>
+							</div>
+							<div class="top-search-btn-wrap">
+								<div class="top-search-btn">
+									<a href="javascript:void(0);"> <i class="ion-search"></i> </a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<header class="header header-mobile">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-2">
+					<div class="header-left">
+						<div id="open-left"><i class="ion-navicon"></i></div>
+					</div>
+				</div>
+				<div class="col-xs-8">
+					<div class="header-center"> 
+                    	<a href="__ROOT__" id="logo-2"> <img class="logo-image" src="__PUBLIC__/home/images/logo.png" alt="garden stuff Logo" /> </a> 
+                    </div>
+				</div>
+				<div class="col-xs-2">
+					<div class="header-right">
+						<div class="mini-cart-wrap">
+							<a href="__APP__/home/shopcar/shopcar">
+								<div class="mini-cart">
+									<div class="mini-cart-icon" data-count="2"> <i class="ion-bag"></i> </div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="main">
+		<div class="section">
+			<div class="container">
+				<div class="row">
+					<div class="login-box">
+                    	<img  class="loginbg1" src="__PUBLIC__/home/images/login1.png"> 
+                    	<img  class="loginbg" src="__PUBLIC__/home/images/login1.png"> 
+                        <div class="main">
+                            <div class="reg-box-pan display-inline"> 
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="text-center mb-1 section-pretitle">register</div>
+                                        <h2 class="text-center section-title mtn-2">注册</h2>
+                                        <div class="organik-seperator center">
+                                            <span class="sep-holder"><span class="sep-line"></span></span>
+                                            <div class="sep-icon"><i class="organik-flower"></i></div>
+                                            <span class="sep-holder"><span class="sep-line"></span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <form action="__APP__/home/login/register" method="post">
+                                <div class="login-box f-mt10">
+                                    <div class="main">
+                                    <div class="reg-box-pan display-inline">
+                                    <div class="reg-box" id="verifyCheck">
+                                  
+                                    <div class="item col-xs-12"><span class="intelligent-label f-fl"><b class="ftx04">*</b>用户名：</span> 
+                                        <div class="f-fl item-ifo">
+                                        <input tabindex="1" class="txt03 f-r3 required" id="adminNo"  type="text" maxlength="20" data-error="用户名不能为空||用户名长度3-20位||只能输入中文、字母、数字、下划线，且以中文或字母开头" data-valid="isNonEmpty||between:3-20||isUname" name="username">                           
+                                         <span class="ie8 icon-close close hide"></span>                             
+                                         <label class="fa fa-check-circle blank hide"></label>       
+                                         <label class="focus"><span>3-20位，中文、字母、数字、下划线的组合，以中文或字母开头</span></label>                
+                                         <label class="focus valid"></label>                         
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="item col-xs-12"><span class="intelligent-label f-fl"><b class="ftx04">*</b>手机号：</span> 
+                                        <div class="f-fl item-ifo">
+                                        <input tabindex="2" class="txt03 f-r3 required" id="phone" type="text" maxlength="11" data-error="手机号码不能为空||手机号码格式不正确" data-valid="isNonEmpty||isPhone"  keycodes="tel" name="phone">                             
+                                        <span class="ie8 icon-close close hide"></span> 
+                                        <label class="fa fa-check-circle blank hide"></label> 
+                                        <label class="focus">请填写11位有效的手机号码</label>           
+                                        <label class="focus valid"></label>                         
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="item col-xs-12"><span class="intelligent-label f-fl"><b class="ftx04">*</b>密码：</span> 
+                                        <div class="f-fl item-ifo">
+                                        <input tabindex="3" class="txt03 f-r3 required" id="password" style="-ms-ime-mode: disabled;" onpaste="return  false" type="password" maxlength="20" data-error="密码不能为空||密码长度6-20位||该密码太简单，有被盗风险，建议字母+数字的组合" data-valid="isNonEmpty||between:6-20||level:2" autocomplete="off" name="userpwd">               
+                                        <span class="ie8 icon-close close hide" style="right: 55px;"></span>
+                                        <span class="showpwd" data-eye="password"></span>                                                    
+                                        <label class="fa fa-check-circle blank hide"></label>                             
+                                        <label class="focus">6-20位英文（区分大小写）、数字、字符的组合</label>                             
+                                        <label class="focus valid"></label><span class="clearfix"></span> 
+                                        <label class="strength"> <span class="f-fl f-size12">安全程度：</span> <b><i>弱</i><i>中</i><i>强</i></b></label>           
+                                        </div>
+                                    </div>
+                                                     
+                                    <div class="item col-xs-12"><span class="intelligent-label f-fl"><b class="ftx04">*</b>确认密码：</span> 
+                                        <div class="f-fl item-ifo">
+                                        <input tabindex="4" class="txt03 f-r3 required" id="rePassword" style="-ms-ime-mode: disabled;" onpaste="return  false" type="password" maxlength="20" data-error="密码不能为空||密码长度6-16位||两次密码输入不一致" data-valid="isNonEmpty||between:6-16||isRepeat:password" autocomplete="off" name="ruserpwd">
+                                        <span class="ie8 icon-close close hide" style="right: 55px;"></span>                             
+                                        <span class="showpwd" data-eye="rePassword"></span> 
+                                        <label class="fa fa-check-circle blank hide"></label> 
+                                        <label class="focus">请再输入一遍上面的密码</label>             
+                                        <label class="focus valid"></label>                              
+                                        </div>
+                                    </div>
+                                                        
+                                    <div class="item col-xs-12">
+                                    	<span class="intelligent-label f-fl"><b class="ftx04">*</b>验证码：</span> 
+                                        <div class="f-fl item-ifo">
+                                            <input tabindex="4" class="txt03 f-r3 f-fl required" id="randCode" style="width: 167px;" type="text" maxlength="4" data-error="验证码不能为空" data-valid="isNonEmpty" name="captcha">    
+                                            <span class="ie8 icon-close close hide"></span> 
+                                            <label class="f-size12 c-999 f-fl f-pl10"> <img src="__CONTROLLER__/captcha" onClick="this.src='__CONTROLLER__/captcha?rand='+Math.random()" /> </label>               
+                                            <label class="fa fa-check-circle blank hide" style="left: 380px;"></label>                            
+                                            <label class="focusa">看不清<!--？<a class="c-blue" href="javascript:;" onclick="this.src='identifCode.php?'+Math.random();" >换一张</a>-->
+                                            <a class="c-blue" onclick="this.src='__CONTROLLER__/captcha?rand='+Math.random()" >换一张</a></label>         
+                                            <!--<img src="__CONTROLLER__/captcha" onClick="this.src='__CONTROLLER__/captcha?rand='+Math.random()" />-->
+                                            <label class="focus valid" style="left: 370px;"></label>   
+                                        </div>
+                                    </div>
+                                    <div class="item col-xs-12">
+                                        <!--<span class="intelligent-label f-fl">&nbsp;</span> -->
+                                        <p class="f-size14 required" data-error="请先同意条款" data-valid="isChecked">
+                                            <input type="checkbox" checked=""> <a class="f-ml5" href="javascript:showoutc();">我已阅读并同意条款</a>
+                                        </p>
+                                        <label class="focus valid"></label>  
+                                    </div>
+                                    <div class="item col-xs-12"><span class="intelligent-label f-fl">&nbsp;</span>   
+                                    	<div class="f-fl item-ifo"><!--<a class="btn btn-blue f-r3" id="btn_part1" href="login.html">注册</a>--><input type="submit" value="注册" class="btn btn-blue f-r3" id="btn_part1" /> </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                   <!-- <div class="m-sPopBg" style="z-index: 998;"></div>
+                                    <div class="m-sPopCon regcon">
+                                    	<div class="m-sPopTitle"><strong>服务协议条款</strong><b class="m-sPopClose" id="sPopClose" onclick="closeClause()">×</b></div>
+                                        <div class="apply_up_content">
+                                        <pre class="f-r0">		<strong>同意以下服务条款，提交注册信息</strong> </pre>
+                                        </div>
+                                    	<center> <a class="btn btn-blue btn-lg f-size12 b-b0 b-l0 b-t0 b-r0 f-pl50 f-pr50 f-r3" href="javascript:closeClause();">已阅读并同意此条款</a>
+                                        </center>
+                                    </div>-->
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+</div>
+					
+						
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5">
+					<img src="__PUBLIC__/home/images/footer_logo.png" class="footer-logo" alt="" />
+					<p>欢迎来到果蔬城。我们的产品是新收获，洗盒准备好，终于从我们的家庭农场送到你家门口。</p>
+					<div class="footer-social">
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="微信"><i class="fa fa-weixin"></i></a>
+						<a href="#" data-toggle="tooltip" data-placement="top" title="微博"><i class="fa fa-weibo"></i></a>
+						<a href="#" data-toggle="tooltip" data-placement="top" title="相片分享"><i class="fa fa-pinterest"></i></a>
+						<a href="#" data-toggle="tooltip" data-placement="top" title="相片墙"><i class="fa fa-instagram"></i></a>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="widget">
+						<h3 class="widget-title">信息</h3>
+						<ul>
+							<li><a href="#">新产品</a></li>
+							<li><a href="#">畅销</a></li>
+							<li><a href="#">关于我们的店</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="widget">
+						<h3 class="widget-title">友情链接</h3>
+						<ul>
+							<li><a href="#">我们的团队</a></li>
+							<li><a href="#">关于我们</a></li>
+							<li><a href="#">安全购物</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="widget">
+						<h3 class="widget-title">订阅</h3>
+						<p>输入您的邮件地址为我们的邮件列表，以保持自己更新。</p>
+						<form class="newsletter">
+							<input type="email" name="EMAIL" placeholder="您的邮箱" required />
+							<button><i class="fa fa-paper-plane"></i></button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="copyright">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8"> Copyright &copy; 2017.Company name All rights reserved. </div>
+				<div class="col-md-4"> <img src="__PUBLIC__/home/images/footer_payment.png" alt="" /> </div>
+			</div>
+		</div>
+		<div class="backtotop" id="backtotop"></div>
+	</div>
+</div>
+
+<script type="text/javascript">
+$(function(){	
+	//第一页的确定按钮
+	$("#btn_part1").click(function(){						
+		if(!verifyCheck._click()) return;
+		$(".part1").hide();
+		$(".part2").show();
+		$(".step li").eq(1).addClass("on");
+	});
+	//第二页的确定按钮
+	$("#btn_part2").click(function(){			
+		if(!verifyCheck._click()) return;
+		$(".part2").hide();
+		$(".part3").show();	
+	});	
+	//第三页的确定按钮
+	$("#btn_part3").click(function(){			
+		if(!verifyCheck._click()) return;
+		$(".part3").hide();
+		$(".part4").show();
+		$(".step li").eq(2).addClass("on");
+		countdown({
+			maxTime:10,
+			ing:function(c){
+				$("#times").text(c);
+			},
+			after:function(){
+				window.location.href="my.html";		
+			}
+		});		
+	});	
+});
+function showoutc(){$(".m-sPopBg,.m-sPopCon").show();}
+function closeClause(){
+	$(".m-sPopBg,.m-sPopCon").hide();		
+}
+</script>
+</body>
+</html>

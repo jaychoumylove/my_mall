@@ -1,0 +1,37 @@
+[ 2017-12-30T10:55:24+08:00 ] 127.0.0.1 /my_mall/home/shopcar/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006182s ]
+SQL: SHOW COLUMNS FROM `ms_shopcar` [ RunTime:0.017989s ]
+SQL: SELECT * FROM `ms_shopcar` WHERE `pro_Id` = 17 AND `user_Name` = 'qcx120' LIMIT 1   [ RunTime:0.000952s ]
+
+[ 2017-12-30T19:29:46+08:00 ] 113.246.84.173 /my_mall/home/order/orderinfo/order_Num/20171230190940146184
+ERR: XMLæ ‡ç­¾è¯­æ³•é”™è¯¯ : value="´ý¸¶¿î"
+
+[ 2017-12-30T19:31:28+08:00 ] 113.246.84.173 /my_mall/home/order/orderinfo/order_Num/20171230190940146184
+ERR: XMLæ ‡ç­¾è¯­æ³•é”™è¯¯ : value="´ý¸¶¿î"
+
+[ 2017-12-30T19:32:58+08:00 ] 113.246.84.173 /my_mall/home/order/orderinfo/order_Num/20171230190940146184
+ERR: XMLæ ‡ç­¾è¯­æ³•é”™è¯¯ : value="´ý¸¶¿î"
+
+[ 2017-12-30T19:33:02+08:00 ] 113.246.84.173 /my_mall/home/order/orderinfo/order_Num/20171230190940146184
+ERR: XMLæ ‡ç­¾è¯­æ³•é”™è¯¯ : value="´ý¸¶¿î"
+
+[ 2017-12-30T19:36:39+08:00 ] 113.246.84.173 /my_mall/home/order/orderinfo/order_Num/20171230190940146184
+ERR: XMLæ ‡ç­¾è¯­æ³•é”™è¯¯ : value="´ý¸¶¿î"
+
+[ 2017-12-30T19:40:06+08:00 ] 113.246.84.173 /my_mall/home/order/orderinfo/order_Num/20171230190940146184
+ERR: XMLæ ‡ç­¾è¯­æ³•é”™è¯¯ : value="´ý¸¶¿î"
+
+[ 2017-12-30T19:41:39+08:00 ] 113.246.84.173 /my_mall/home/order/orderinfo/order_Num/20171230190940146184
+ERR: XMLæ ‡ç­¾è¯­æ³•é”™è¯¯ : value="´ý¸¶¿î"
+
+[ 2017-12-30T19:48:25+08:00 ] 113.246.84.173 /my_mall/home/order/orderinfo/order_Num/20171230190940146184
+ERR: XMLæ ‡ç­¾è¯­æ³•é”™è¯¯ : value="´ý¸¶¿î"
+
+[ 2017-12-30T19:51:45+08:00 ] 113.246.84.173 /my_mall/home/order/orderinfo/order_Num/20171230190940146184
+ERR: XMLæ ‡ç­¾è¯­æ³•é”™è¯¯ : value="´ý¸¶¿î"
+
+[ 2017-12-30T19:51:55+08:00 ] 113.246.84.173 /my_mall/home/order/orderinfo/order_Num/20171230190940146184
+ERR: XMLæ ‡ç­¾è¯­æ³•é”™è¯¯ : value="´ý¸¶¿î"
+

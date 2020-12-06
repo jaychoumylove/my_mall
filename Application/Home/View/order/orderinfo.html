@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<link rel="stylesheet" href="__PUBLIC__/home/css/bootstrap.min.css" type="text/css" media="all">
+<link rel="stylesheet" href="__PUBLIC__/home/css/font-awesome.min.css" type="text/css" media="all" />
+<link rel="stylesheet" href="__PUBLIC__/home/css/ionicons.min.css" type="text/css" media="all" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/personal.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/media.css">
+<title>订单详情</title>
+<script src="__PUBLIC__/home/js/jquery.min.js"></script>
+<script src="__PUBLIC__/home/js/personal.js"></script>
+<script src="__PUBLIC__/home/js/area.js"></script>
+
+</head>
+<body>
+<div class="main">
+    <ul class="breadcrumbs">
+    	<li>订单详情</li>
+        <li><a href="__APP__/home/order/orderlist">我的订单</a></li>
+        <li><a href="__APP__/home/user/main">会员中心</a></li>
+    </ul>
+    <div class="order-info">
+        <div class="my_base my_base03">
+            <div class="comment_list">
+                <div class="my_ord01">
+                   <div class="order-detail_01">
+                      <span>订单号：{$data.order_Num}</span>
+                      <switch name="$data.orderment">
+                          <case value="待付款">
+                          <span> 状态：<i> {$data.orderment} </i>
+                          <span class="pay"><a href="__APP__/home/order/pay/order_Num/{$data.order_Num}">立即支付</a></span></span>
+                      	  <font class="right"><span><a href="__APP__/home/order/close/order_Num/{$data.order_Num}">取消订单</a></span></font>
+                          </case>
+                          <case value="待发货"><span> 状态：<i> {$data.orderment} </i></span></case>
+                          <case value="确认收货">
+                          <span class="pay"><span> 状态：<i> {$data.orderment} </i><a href="__APP__/home/order/getgoods/order_Num/{$data.order_Num}">确认收货</a></span></span>
+                          </case>
+                          <case value="完成">
+                          <span> 状态：<i> {$data.orderment} </i></span>
+                          <font class="right"><span> 状态：<i> {$data.orderment} </i></span><span><a href="__APP__/home/order/del/order_Num/{$data.order_Num}">删除订单</a></span></font>
+                          </case>
+                          <case value="关闭">
+                          <span> 状态：<i> {$data.orderment} </i></span>
+                          <font class="right"><span><a href="__APP__/home/order/del/order_Num/{$data.order_Num}">删除订单</a></span></font>
+                          </case>
+                          <default />
+                      </switch>
+                    </div>
+                   <div class="order-detail_02"> <p> 尊敬的客户，我们的快递默认发中通或邮政，如果您需要发其他物流请在留言里说明。</p></div>
+                </div>  
+                <div class="order-detail_04">
+                       <h5>订单信息</h5>
+                       <ul class="my_order_message">
+                        <li>
+                          <strong>收货人信息</strong><br />收 货 人：{$data.user_Name}<br />地    址：{$data.address_province}-{$data.address_city}-{$data.address_county}-{$data.address_info}<br />手机号码：{$data.phonenumber}
+                        </li>
+                        <li>
+                          <strong>支付及配送方式</strong><br /> 支付方式：{$data.payment}<br /> 配送方式：{$data.shippingment}<br />
+                        </li>
+                      </ul>
+                      <div class="car_top1">商品清单</div> 
+                      <div class="box-bd">
+                            <dl class="checkout-goods-list">
+                                <dt class="clearfix">
+                                    <span class="col col-1">商品名称</span>
+                                    <span class="col col-2">购买价格</span>
+                                    <span class="col col-3">购买数量</span>
+                                    <span class="col col-4">小计（元）</span>
+                                </dt>
+                      			<foreach name="list" item="vl">
+                                <dd class="item clearfix">
+                                    <div class="item-row">
+                                        <div class="col col-1">
+                                            <div class="g-pic"> <img src="__PUBLIC__/uploads/product_img/{$vl.Pproduct_img}" width="80" height="80" alt=""> </div>
+                                            <div class="g-info"> <a href="__APP__/home/product/productinfo/Id/{$vl.PId}" target="_blank"> {$vl.Pname} </a> </div>
+                                        </div>
+                                        <div class="col col-2">￥{$vl.Phere_price}</div>
+                                        <div class="col col-3">{$vl.Opro_num}</div>
+                                        <div class="col col-4">￥{$vl.Opay}</div>
+                                    </div>
+                                </dd>
+                                </foreach>
+                            </dl>
+                            <div class="checkout-count clearfix">
+                                <div class="checkout-count-extend xm-add-buy">
+                                    <h3 class="title">会员留言</h3><br>
+                                    <p>{$data.comment}</p>
+                                </div>
+                                <div class="checkout-price">
+                                    <ul>
+                                        <li> 订单总额：<span>￥{$data.pay}</span> </li>
+                                        <li> 活动优惠：<span>￥-0</span> </li>
+                                        <li> 优惠券抵扣：<span id="couponDesc">￥-0</span></li>
+                                        <li> 运费：<span id="postageDesc">￥0</span></li>
+                                    </ul>
+                                    <p class="checkout-total">应付总额：<span><strong id="totalPrice">￥{$data.pay}</strong></span></p>
+                                </div>
+                            </div>
+                        </div> 
+               </div>
+          </div>
+         </div>
+    </div>
+</div>
+</body>
+</html>

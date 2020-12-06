@@ -1,0 +1,50 @@
+[ 2017-12-22T14:48:28+08:00 ] 127.0.0.1 /my_mall/Home/farite/farite.html
+ERR: 模板不存在:./Application/Home/View/farite/farite.html
+
+[ 2017-12-22T15:03:01+08:00 ] 127.0.0.1 /my_mall/home/shopcar/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004325s ]
+SQL: SHOW COLUMNS FROM `ms_shopcar` [ RunTime:0.045537s ]
+SQL: UPDATE `ms_shopcar` SET `pro_num`=2 WHERE `user_Name` = 'qcx122' AND `Id` = 27 [ RunTime:0.026971s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ms_shopcar` WHERE `user_Name` = 'qcx122' LIMIT 1   [ RunTime:0.000691s ]
+SQL: SELECT ms_shopcar.*,ms_shopcar.Id as sId,ms_product.name as Pname,ms_product.product_img as product_img,ms_product.here_price as Phere_price,ms_product.machete_price as Pmachete_price,ms_product.sales_vol as Psales_vol,ms_category.name as PCName FROM `ms_shopcar` INNER JOIN ms_product ON ms_shopcar.pro_Id = ms_product.Id INNER JOIN ms_category ON ms_category.Id = ms_product.classId  WHERE `user_Name` = 'qcx122' AND `Id` = '27' ORDER BY ms_shopcar.addtime desc LIMIT 0,2   [ RunTime:0.000590s ]
+ERR: 1052:Column 'Id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT ms_shopcar.*,ms_shopcar.Id as sId,ms_product.name as Pname,ms_product.product_img as product_img,ms_product.here_price as Phere_price,ms_product.machete_price as Pmachete_price,ms_product.sales_vol as Psales_vol,ms_category.name as PCName FROM `ms_shopcar` INNER JOIN ms_product ON ms_shopcar.pro_Id = ms_product.Id INNER JOIN ms_category ON ms_category.Id = ms_product.classId  WHERE `user_Name` = 'qcx122' AND `Id` = '27' ORDER BY ms_shopcar.addtime desc LIMIT 0,2  
+
+[ 2017-12-22T15:03:02+08:00 ] 127.0.0.1 /my_mall/home/shopcar/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000944s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001845s ]
+SQL: SHOW COLUMNS FROM `ms_shopcar` [ RunTime:0.028634s ]
+SQL: UPDATE `ms_shopcar` SET `pro_num`=1 WHERE `user_Name` = 'qcx122' AND `Id` = 27 [ RunTime:0.000380s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ms_shopcar` WHERE `user_Name` = 'qcx122' LIMIT 1   [ RunTime:0.000323s ]
+SQL: SELECT ms_shopcar.*,ms_shopcar.Id as sId,ms_product.name as Pname,ms_product.product_img as product_img,ms_product.here_price as Phere_price,ms_product.machete_price as Pmachete_price,ms_product.sales_vol as Psales_vol,ms_category.name as PCName FROM `ms_shopcar` INNER JOIN ms_product ON ms_shopcar.pro_Id = ms_product.Id INNER JOIN ms_category ON ms_category.Id = ms_product.classId  WHERE `user_Name` = 'qcx122' AND `Id` = '27' ORDER BY ms_shopcar.addtime desc LIMIT 0,2   [ RunTime:0.000278s ]
+ERR: 1052:Column 'Id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT ms_shopcar.*,ms_shopcar.Id as sId,ms_product.name as Pname,ms_product.product_img as product_img,ms_product.here_price as Phere_price,ms_product.machete_price as Pmachete_price,ms_product.sales_vol as Psales_vol,ms_category.name as PCName FROM `ms_shopcar` INNER JOIN ms_product ON ms_shopcar.pro_Id = ms_product.Id INNER JOIN ms_category ON ms_category.Id = ms_product.classId  WHERE `user_Name` = 'qcx122' AND `Id` = '27' ORDER BY ms_shopcar.addtime desc LIMIT 0,2  
+
+[ 2017-12-22T15:03:03+08:00 ] 127.0.0.1 /my_mall/home/shopcar/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000967s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001819s ]
+SQL: SHOW COLUMNS FROM `ms_shopcar` [ RunTime:0.027923s ]
+SQL: UPDATE `ms_shopcar` SET `pro_num`=0 WHERE `user_Name` = 'qcx122' AND `Id` = 27 [ RunTime:0.000417s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ms_shopcar` WHERE `user_Name` = 'qcx122' LIMIT 1   [ RunTime:0.001509s ]
+SQL: SELECT ms_shopcar.*,ms_shopcar.Id as sId,ms_product.name as Pname,ms_product.product_img as product_img,ms_product.here_price as Phere_price,ms_product.machete_price as Pmachete_price,ms_product.sales_vol as Psales_vol,ms_category.name as PCName FROM `ms_shopcar` INNER JOIN ms_product ON ms_shopcar.pro_Id = ms_product.Id INNER JOIN ms_category ON ms_category.Id = ms_product.classId  WHERE `user_Name` = 'qcx122' AND `Id` = '27' ORDER BY ms_shopcar.addtime desc LIMIT 0,2   [ RunTime:0.000355s ]
+ERR: 1052:Column 'Id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT ms_shopcar.*,ms_shopcar.Id as sId,ms_product.name as Pname,ms_product.product_img as product_img,ms_product.here_price as Phere_price,ms_product.machete_price as Pmachete_price,ms_product.sales_vol as Psales_vol,ms_category.name as PCName FROM `ms_shopcar` INNER JOIN ms_product ON ms_shopcar.pro_Id = ms_product.Id INNER JOIN ms_category ON ms_category.Id = ms_product.classId  WHERE `user_Name` = 'qcx122' AND `Id` = '27' ORDER BY ms_shopcar.addtime desc LIMIT 0,2  
+
+[ 2017-12-22T15:03:04+08:00 ] 127.0.0.1 /my_mall/home/shopcar/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000933s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001780s ]
+SQL: SHOW COLUMNS FROM `ms_shopcar` [ RunTime:0.015475s ]
+SQL: UPDATE `ms_shopcar` SET `pro_num`=1 WHERE `user_Name` = 'qcx122' AND `Id` = 27 [ RunTime:0.000403s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ms_shopcar` WHERE `user_Name` = 'qcx122' LIMIT 1   [ RunTime:0.000401s ]
+SQL: SELECT ms_shopcar.*,ms_shopcar.Id as sId,ms_product.name as Pname,ms_product.product_img as product_img,ms_product.here_price as Phere_price,ms_product.machete_price as Pmachete_price,ms_product.sales_vol as Psales_vol,ms_category.name as PCName FROM `ms_shopcar` INNER JOIN ms_product ON ms_shopcar.pro_Id = ms_product.Id INNER JOIN ms_category ON ms_category.Id = ms_product.classId  WHERE `user_Name` = 'qcx122' AND `Id` = '27' ORDER BY ms_shopcar.addtime desc LIMIT 0,2   [ RunTime:0.000363s ]
+ERR: 1052:Column 'Id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT ms_shopcar.*,ms_shopcar.Id as sId,ms_product.name as Pname,ms_product.product_img as product_img,ms_product.here_price as Phere_price,ms_product.machete_price as Pmachete_price,ms_product.sales_vol as Psales_vol,ms_category.name as PCName FROM `ms_shopcar` INNER JOIN ms_product ON ms_shopcar.pro_Id = ms_product.Id INNER JOIN ms_category ON ms_category.Id = ms_product.classId  WHERE `user_Name` = 'qcx122' AND `Id` = '27' ORDER BY ms_shopcar.addtime desc LIMIT 0,2  
+
+[ 2017-12-22T16:48:27+08:00 ] 127.0.0.1 /my_mall/home/address/address
+ERR: 模板不存在:./Application/Home/View/address/address.html
+

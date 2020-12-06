@@ -1,0 +1,101 @@
+[ 2018-01-04T19:38:22+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=26
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003413s ]
+SQL: SHOW COLUMNS FROM `fw_address` [ RunTime:0.014385s ]
+SQL: SELECT * FROM `fw_address` WHERE `Id` = 26 LIMIT 1   [ RunTime:0.000904s ]
+
+[ 2018-01-04T19:38:27+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001909s ]
+SQL: SHOW COLUMNS FROM `fw_address` [ RunTime:0.005182s ]
+SQL: UPDATE `fw_address` SET `name`='ÊòØÁöÑ',`address_province`='Âåó‰∫¨Â∏\Ç',`address_city`='Âåó‰∫¨Â∏\Ç',`address_county`='ÊúùÈò≥Âå\∫',`address_info`='Â§ö‰∏™11111',`phonenumber`='15233656985',`postcode`='152336' WHERE `Id` = 26 [ RunTime:0.000574s ]
+
+[ 2018-01-04T19:38:31+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=26
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000999s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001928s ]
+SQL: SHOW COLUMNS FROM `fw_address` [ RunTime:0.009330s ]
+SQL: SELECT * FROM `fw_address` WHERE `Id` = 26 LIMIT 1   [ RunTime:0.000425s ]
+
+[ 2018-01-04T19:38:33+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001976s ]
+SQL: SHOW COLUMNS FROM `fw_address` [ RunTime:0.022989s ]
+SQL: UPDATE `fw_address` SET `ismoren`='Âê\¶' WHERE `user_Name` = 'qcx120' [ RunTime:0.000430s ]
+SQL: UPDATE `fw_address` SET `name`='ÊòØÁöÑ',`address_province`='Âåó‰∫¨Â∏\Ç',`address_city`='Âåó‰∫¨Â∏\Ç',`address_county`='ÊúùÈò≥Âå\∫',`address_info`='Â§ö‰∏™11111',`phonenumber`='15233656985',`postcode`='152336',`ismoren`='Êò\Ø' WHERE `Id` = 26 [ RunTime:0.000333s ]
+
+[ 2018-01-04T19:39:01+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002853s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003884s ]
+SQL: SHOW COLUMNS FROM `fw_address` [ RunTime:0.005573s ]
+SQL: SELECT * FROM `fw_address` WHERE `Id` = 25 LIMIT 1   [ RunTime:0.000453s ]
+
+[ 2018-01-04T19:39:08+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000968s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001863s ]
+SQL: SHOW COLUMNS FROM `fw_address` [ RunTime:0.023480s ]
+SQL: UPDATE `fw_address` SET `ismoren`='Âê\¶' WHERE `user_Name` = 'qcx120' [ RunTime:0.000476s ]
+SQL: UPDATE `fw_address` SET `name`='ÂçÅÂ§ö‰∏\™',`address_province`='Â§©Ê¥•Â∏\Ç',`address_city`='Â§©Ê¥•Â∏\Ç',`address_county`='ÂíåÂπ≥Âå\∫',`address_info`='ÂçÅÂ§ö‰∏\™5555555',`phonenumber`='15233652564',`postcode`='652564',`ismoren`='Êò\Ø' WHERE `Id` = 25 [ RunTime:0.000385s ]
+
+[ 2018-01-04T19:39:48+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001913s ]
+SQL: SHOW COLUMNS FROM `fw_address` [ RunTime:0.005433s ]
+SQL: SELECT * FROM `fw_address` WHERE `Id` = 1 LIMIT 1   [ RunTime:0.000624s ]
+
+[ 2018-01-04T19:39:58+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002139s ]
+SQL: SHOW COLUMNS FROM `fw_address` [ RunTime:0.005632s ]
+SQL: SELECT * FROM `fw_address` WHERE `Id` = 1 LIMIT 1   [ RunTime:0.000466s ]
+
+[ 2018-01-04T19:40:02+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001924s ]
+SQL: SHOW COLUMNS FROM `fw_address` [ RunTime:0.023151s ]
+
+[ 2018-01-04T19:40:11+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001084s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002024s ]
+SQL: SHOW COLUMNS FROM `fw_address` [ RunTime:0.025505s ]
+SQL: UPDATE `fw_address` SET `ismoren`='Âê\¶' WHERE `user_Name` = 'qcx120' [ RunTime:0.000465s ]
+SQL: UPDATE `fw_address` SET `name`='ÂéªÊì¶Ê¥\ó',`address_province`='ÊπñÂçóÁú\Å',`address_city`='ÈÉ¥Â∑ûÂ∏\Ç',`address_county`='ÂüéÂÖ≥Èï\á',`address_info`='Â§ö‰∏™Âú∞ÊñπËßÑËåÉÁöÑÂú∞',`phonenumber`='15200965915',`postcode`='425999',`ismoren`='Êò\Ø' WHERE `Id` = 1 [ RunTime:0.000357s ]
+
+[ 2018-01-04T19:44:57+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002178s ]
+SQL: SHOW COLUMNS FROM `fw_address` [ RunTime:0.023300s ]
+SQL: SELECT * FROM `fw_address` WHERE `Id` = 1 LIMIT 1   [ RunTime:0.000447s ]
+
+[ 2018-01-04T19:46:14+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001859s ]
+SQL: SHOW COLUMNS FROM `fw_address` [ RunTime:0.023041s ]
+SQL: SELECT * FROM `fw_address` WHERE `Id` = 1 LIMIT 1   [ RunTime:0.000438s ]
+
+[ 2018-01-04T19:46:23+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001898s ]
+SQL: SHOW COLUMNS FROM `fw_address` [ RunTime:0.025921s ]
+SQL: UPDATE `fw_address` SET `ismoren`='Âê\¶' WHERE `user_Name` = 'qcx120' [ RunTime:0.000611s ]
+SQL: UPDATE `fw_address` SET `name`='ÂéªÊì¶Ê¥\ó',`address_province`='ÊπñÂçóÁú\Å',`address_city`='ÈÉ¥Â∑ûÂ∏\Ç',`address_county`='ÂüéÂÖ≥Èï\á',`address_info`='5555555',`phonenumber`='15200965915',`postcode`='425999',`ismoren`='Êò\Ø' WHERE `Id` = 1 [ RunTime:0.000555s ]
+
+[ 2018-01-04T19:46:40+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003413s ]
+SQL: SHOW COLUMNS FROM `fw_address` [ RunTime:0.058102s ]
+SQL: SELECT * FROM `fw_address` WHERE `Id` = 1 LIMIT 1   [ RunTime:0.001161s ]
+

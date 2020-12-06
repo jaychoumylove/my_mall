@@ -1,0 +1,131 @@
+CREATE  DATABASE  [IF NOT EXISTS]  'my_mall'
+use 'my_mall'
+create  TABLE `ms_admin` (
+  `Id` int(11) NOT NULL AUTO_INCREMENT,
+  `adminname` char(50) NOT NULL DEFAULT '' COMMENT '用户名',
+  `adminpwd` char(32) NOT NULL DEFAULT '' COMMENT '密码',
+  `realname` varchar(50) DEFAULT NULL COMMENT '真实姓名',
+  `sex` enum('男','女') NOT NULL DEFAULT '男' COMMENT '性别',
+  `email` varchar(100) DEFAULT NULL COMMENT '电子邮箱',
+  `phone` varchar(11) DEFAULT NULL COMMENT '手机号码',
+  `addtime` datetime DEFAULT NULL COMMENT '新增时间',
+  `addAdminname` varchar(20) DEFAULT NULL COMMENT '谁添加的',
+  PRIMARY KEY (`Id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='管理员表';
+create  TABLE `ms_user` (
+  `Id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` char(50) NOT NULL DEFAULT '' COMMENT '用户名',
+  `userpwd` char(32) NOT NULL DEFAULT '' COMMENT '密码',
+  `userphoto` char(50) NOT NULL DEFAULT '' COMMENT '用户头像',
+  `realname` varchar(50) DEFAULT NULL COMMENT '真实姓名',
+  `sex` enum('男','女') NOT NULL DEFAULT '男' COMMENT '性别',
+  `email` varchar(100) DEFAULT NULL COMMENT '电子邮箱',
+  `phone` varchar(11) DEFAULT NULL COMMENT '手机号码',
+  `addtime` datetime DEFAULT NULL COMMENT '新增时间',
+  `addAdminname` char(50) DEFAULT NULL COMMENT '谁添加的',
+  PRIMARY KEY (`Id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='用户表';
+CREATE TABLE `ms_address` (
+  `Id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_Name` char(50) DEFAULT NULL COMMENT '用户名',
+  `name` varchar(255) DEFAULT NULL COMMENT '收货人',
+  `address_province` varchar(255) DEFAULT NULL COMMENT '收货地址-省',
+  `address_info` varchar(255) DEFAULT NULL COMMENT '详细地址',
+  `phonenumber` char(11) DEFAULT NULL COMMENT '联系电话',
+  `addtime` datetime DEFAULT NULL COMMENT '添加时间',
+  `postcode` char(6) DEFAULT NULL COMMENT '邮编',
+  `address_city` varchar(255) DEFAULT NULL COMMENT '收货地址-市',
+  `address_county` varchar(255) DEFAULT NULL COMMENT '收货地址-区/县',
+  `ismoren` enum('否','是') NOT NULL DEFAULT '是' COMMENT '是否默认',
+  PRIMARY KEY (`Id`),
+  constraint index_user_Name foreign key(`user_Name`) references `ms_user`(`username`),
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='收货地址表';
+CREATE TABLE `ms_farite` (
+  `Id` int(11) NOT NULL AUTO_INCREMENT,
+  `pro_Id` int(11) DEFAULT NULL COMMENT '商品Id',
+  `userName` varchar(255) DEFAULT NULL COMMENT '用户名',
+  `addtime` datetime DEFAULT NULL COMMENT '收藏时间',
+  PRIMARY KEY (`Id`),
+  constraint index_user_Name foreign key(`user_Name`) references `ms_user`(`username`),
+  constraint index_proId foreign key(`pro_Id`) references `ms_product`(`Id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='收藏表';
+CREATE TABLE `ms_product_class` (
+  `Id` int(11) NOT NULL AUTO_INCREMENT,
+  `parentId` int(11) DEFAULT NULL COMMENT '一级分类ID',
+  `name` varchar(255) DEFAULT NULL COMMENT '分类名称',
+  `description` text COMMENT '描述',
+  `addtime` datetime DEFAULT NULL COMMENT '添加时间',
+  PRIMARY KEY (`Id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='产品类别表';
+CREATE TABLE `ms_product` (
+  `Id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` text COMMENT '产品名称',
+  `classId` int(11) DEFAULT NULL COMMENT '所属二级分类',
+  `yg_price` float(16,2) DEFAULT NULL COMMENT '**价',
+  `machete_price` float(16,2) DEFAULT NULL COMMENT '市场价',
+  `stock` int(11) DEFAULT NULL COMMENT '库存',
+  `addtime` datetime DEFAULT NULL COMMENT '添加时间',
+  `sales_vol` int(11) DEFAULT NULL COMMENT '销量',
+  `product_img` varchar(255) DEFAULT NULL COMMENT '商品主图，224*224',
+  `description` longtext COMMENT '详情描述',
+  `isput_on` enum('否','是') NOT NULL DEFAULT '否' COMMENT '是否上架', 
+  `ishot` enum('否','是') NOT NULL DEFAULT '否' COMMENT '是否热销',
+  `show_img` varchar(255) DEFAULT NULL COMMENT '商品展示图max800*800',
+  PRIMARY KEY (`Id`),
+  constraint index_classId foreign key(`classId`) references `ms_product_class`(`Id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='产品表';
+CREATE TABLE `ms_comment` (
+  `Id` int(11) NOT NULL AUTO_INCREMENT,
+  `pro_Id` int(11) DEFAULT NULL COMMENT '商品Id',
+  `user_Name` varchar(50) DEFAULT NULL COMMENT '评论用户名',
+  `com_class` varchar(1) DEFAULT NULL COMMENT '评论星级',
+  `comment` longtext COMMENT '评论内容',
+  `addtime` datetime DEFAULT NULL COMMENT '评论时间',
+  PRIMARY KEY (`Id`),
+  constraint index_pro_Id foreign key(`pro_Id`) references `ms_product`(`Id`),
+  constraint index_user_Name foreign key(`user_Name`) references `ms_user`(`username`),
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='评论表';
+CREATE TABLE `ms_order` (
+  `Id` int(11) NOT NULL AUTO_INCREMENT,
+  `order_Num` varchar(20) NOT NULL COMMENT '订单号',
+  `user_Name` varchar(50) NOT NULL COMMENT '用户名',
+  `pay` float(16,2) DEFAULT '0.00' COMMENT '实付款',
+  `payment` enum('余额','银联卡','蚂蚁花呗','支付宝') NOT NULL DEFAULT '余额' COMMENT '支付方式',
+  `shippingment` enum('顺丰','圆通','申通','韵达','百世汇通') NOT NULL DEFAULT '韵达' COMMENT '配送方式',
+  `yunfei` float(16,2) DEFAULT '0.00' COMMENT '运费',
+  `paytime` datetime NOT NULL COMMENT '购买时间',
+  `orderment` enum('待付款','待发货','确认收货','完成') NOT NULL DEFAULT '未付款' COMMENT '订单状态',
+  `address` int(11) NOT NULL COMMENT '收货地址Id',
+  `ment` longtext DEFAULT NULL COMMENT '备注',
+  PRIMARY KEY (`Id`),
+  constraint index_userName foreign key(`user_Name`) references `ms_user`(`username`),
+  constraint index_address foreign key(`address`) references `ms_address`(`Id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='订单表';
+CREATE TABLE `ms_orderlist` (
+  `Id` int(11) NOT NULL AUTO_INCREMENT,
+  `order_Num` varchar(20) DEFAULT NULL COMMENT '订单号',
+  `user_Name` varchar(255) DEFAULT NULL COMMENT '用户名',
+  `pro_Id` int(11) DEFAULT NULL COMMENT '商品Id',
+  `pro_num` varchar(255) DEFAULT NULL COMMENT '商品数量',
+  `pro_price` float(16,2) NOT NULL DEFAULT '0.00' COMMENT '商品单价',
+  `pro_name` varchar(255) NOT NULL DEFAULT NULL COMMENT '商品名称',
+  `pro_class` varchar(255) NOT NULL COMMENT '商品分类',
+  `addtime` datetime DEFAULT NULL COMMENT '添加时间',
+  `iscomment` enum('否','是') NOT NULL DEFAULT '否' COMMENT '是否评论',
+  PRIMARY KEY (`Id`),
+  constraint index_order_Num foreign key(`order_Num`) references `ms_order`(`order_Num`),
+  constraint index_userName foreign key(`user_Name`) references `ms_user`(`username`),
+  constraint index_proId foreign key(`pro_Id`) references `ms_product`(`Id`)
+) ENGINE=MyISAM AUTO_INCREMENT=25 DEFAULT CHARSET=utf8 COMMENT='购买商品清单';
+CREATE TABLE `ms_shoppingcar` (
+  `Id` int(11) NOT NULL AUTO_INCREMENT,
+  `pro_Id` int(11) DEFAULT NULL COMMENT '商品Id',
+  `pro_num` int(11) DEFAULT NULL COMMENT '商品数量',
+  `user_Name` varchar(50) DEFAULT NULL COMMENT '用户名',
+  `addtime` datetime DEFAULT NULL COMMENT '添加时间',
+  PRIMARY KEY (`Id`),
+  constraint index_user_Name foreign key(`user_Name`) references `ms_user`(`username`),
+  constraint index_proId foreign key(`pro_Id`) references `ms_product`(`Id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='购物车表';
+
+

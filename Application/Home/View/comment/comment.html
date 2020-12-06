@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+<link rel="stylesheet" href="__PUBLIC__/home/css/bootstrap.min.css" type="text/css" media="all">
+<link rel="stylesheet" href="__PUBLIC__/home/css/font-awesome.min.css" type="text/css" media="all" />
+<link rel="stylesheet" href="__PUBLIC__/home/css/ionicons.min.css" type="text/css" media="all" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/personal.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/media.css">
+<title>我的评论</title>
+<script src="__PUBLIC__/home/js/jquery.min.js"></script>
+<script src="__PUBLIC__/home/js/personal.js"></script>
+<script src="__PUBLIC__/home/js/area.js"></script>
+
+</head>
+<body>
+<div class="main">
+    <ul class="breadcrumbs">
+        <li>我的评论</li>
+        <li><a href="__APP__/home/user/main">会员中心</a></li>
+    </ul>
+	<div class="zx_cont">
+    <foreach name="data" item="vuc">
+        <div class="zx_cdiv clearfix">
+            <div class="zx_cdL">
+              <img src="__PUBLIC__/uploads/userphoto/{$vuc.Uuserphoto}" alt="{$vuc.user_Name}">
+               <p>{$vuc.user_Name}<span>消费会员</span></p>
+            </div>
+            <div class="zx_cdR zx_cdRdiv">
+               <div class="zx_cdR01">
+                  <ul class="clearfix">
+                  <for start="0" end="$vuc.com_class">
+                  <li><i class="fa fa-star" style="color:rgb(255, 153, 0)"></i></li>
+                  </for>
+                  <for start="$vuc.com_class" end="5">
+                  <li><i class="fa fa-star"></i></li>
+                  </for>
+                     <!--<li></li>
+                     <li><img src="__PUBLIC__/home/images/start.png"/></li>
+                     <li><img src="__PUBLIC__/home/images/start.png"/></li>
+                     <li><img src="__PUBLIC__/home/images/start.png"/></li>
+                     <li><img src="__PUBLIC__/home/images/start.png"/></li>-->
+                  </ul>
+                  <p>发布于：{$vuc.Caddtime}</p>
+               </div>
+               <div class="zx_cdR02">
+                   <p class="clearfix"><span>评论：</span><i>{$vuc.comment}</i></p>
+                </div>
+                <!--<div class="zx_cdR03">
+                   <span>用户晒单：</span>
+                      <ul class="clearfix">
+                         <li><img src="__PUBLIC__/home/images/shop/shop_1.jpg" alt="晒单01"/></li>
+                         <li><img src="__PUBLIC__/home/images/shop/shop_2.jpg" alt="晒单02"/></li>
+                         <li><img src="__PUBLIC__/home/images/shop/shop_1.jpg" alt="晒单03"/></li>
+                         <li><img src="__PUBLIC__/home/images/shop/shop_2.jpg" alt="晒单04"/></li>
+                      </ul>
+                </div>-->
+               <!-- <div class="zx_cdR02 zx_cdR04">
+                   <p class="clearfix"><span>客服回复：</span><i>谢谢亲的好评！欢迎下次光临！</i></p>
+                </div>-->
+               <img class="rjiao" src="__PUBLIC__/home/images/zx_contsj.png" alt="评价">
+            </div>
+        </div>
+    </foreach>
+        <!--<div class="zx_cdiv clearfix">
+            <div class="zx_cdL">
+              <img src="__PUBLIC__/home/images/my.jpg" alt="帕丁丁">
+               <p>帕丁丁18874042302<span>消费会员</span></p>
+            </div>
+            <div class="zx_cdR zx_cdRdiv">
+               <div class="zx_cdR01">
+                  <ul class="clearfix">
+                     <li><img src="__PUBLIC__/home/images/start.png"></li>
+                     <li><img src="__PUBLIC__/home/images/start.png"></li>
+                     <li><img src="__PUBLIC__/home/images/start.png"></li>
+                     <li><img src="__PUBLIC__/home/images/start.png"></li>
+                     <li><img src="__PUBLIC__/home/images/start.png"></li>
+                  </ul>
+                  <p>发布于：2017-12-14 12:53:21</p>
+               </div>
+               <div class="zx_cdR02">
+                   <p class="clearfix"><span>评论：</span><i>很新鲜，很美味，健康的选择，真心推荐；很新鲜，很美味，健康的选择，真心推荐；很新鲜，很美味，健康的选择，真心推荐重要的事多说几遍</i></p>
+                </div>
+                <div class="zx_cdR03">
+                   <span>用户晒单：</span>
+                      <ul class="clearfix">
+                         <li><img src="__PUBLIC__/home/images/shop/shop_1.jpg" alt="晒单01"></li>
+                         <li><img src="__PUBLIC__/home/images/shop/shop_2.jpg" alt="晒单02"></li>
+                         <li><img src="__PUBLIC__/home/images/shop/shop_1.jpg" alt="晒单03"></li>
+                         <li><img src="__PUBLIC__/home/images/shop/shop_2.jpg" alt="晒单04"></li>
+                      </ul>
+                </div>
+               <div class="zx_cdR02 zx_cdR04">
+                   <p class="clearfix"><span>客服回复：</span><i>谢谢亲的好评！欢迎下次光临！</i></p>
+                </div>
+               <img class="rjiao" src="__PUBLIC__/home/images/zx_contsj.png" alt="评价">
+            </div>
+        </div>-->
+     </div>
+     <div class="pagination"> 
+        {$page}
+    </div>           
+</div>
+</body>
+</html>

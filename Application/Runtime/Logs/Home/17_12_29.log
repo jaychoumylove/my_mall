@@ -1,0 +1,476 @@
+[ 2017-12-29T12:12:36+08:00 ] 127.0.0.1 /my_mall/home/shopcar/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000980s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001821s ]
+SQL: SHOW COLUMNS FROM `ms_shopcar` [ RunTime:0.033103s ]
+SQL: UPDATE `ms_shopcar` SET `pro_num`=2 WHERE `user_Name` = 'qcx120' AND `Id` = 37 [ RunTime:0.110680s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ms_shopcar` WHERE `user_Name` = 'qcx120' LIMIT 1   [ RunTime:0.000446s ]
+SQL: SELECT ms_shopcar.*,ms_shopcar.Id as sId,ms_product.name as Pname,ms_product.product_img as product_img,ms_product.here_price as Phere_price,ms_product.machete_price as Pmachete_price,ms_product.sales_vol as Psales_vol,ms_category.name as PCName FROM `ms_shopcar` INNER JOIN ms_product ON ms_shopcar.pro_Id = ms_product.Id INNER JOIN ms_category ON ms_category.Id = ms_product.classId  WHERE `user_Name` = 'qcx120' AND `Id` = '37' ORDER BY ms_shopcar.addtime desc LIMIT 0,2   [ RunTime:0.001734s ]
+ERR: 1052:Column 'Id' in where clause is ambiguous
+ [ SQLËØ≠Âè• ] : SELECT ms_shopcar.*,ms_shopcar.Id as sId,ms_product.name as Pname,ms_product.product_img as product_img,ms_product.here_price as Phere_price,ms_product.machete_price as Pmachete_price,ms_product.sales_vol as Psales_vol,ms_category.name as PCName FROM `ms_shopcar` INNER JOIN ms_product ON ms_shopcar.pro_Id = ms_product.Id INNER JOIN ms_category ON ms_category.Id = ms_product.classId  WHERE `user_Name` = 'qcx120' AND `Id` = '37' ORDER BY ms_shopcar.addtime desc LIMIT 0,2  
+
+[ 2017-12-29T12:12:37+08:00 ] 127.0.0.1 /my_mall/home/shopcar/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002642s ]
+SQL: SHOW COLUMNS FROM `ms_shopcar` [ RunTime:0.008973s ]
+SQL: UPDATE `ms_shopcar` SET `pro_num`=3 WHERE `user_Name` = 'qcx120' AND `Id` = 37 [ RunTime:0.000453s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ms_shopcar` WHERE `user_Name` = 'qcx120' LIMIT 1   [ RunTime:0.000357s ]
+SQL: SELECT ms_shopcar.*,ms_shopcar.Id as sId,ms_product.name as Pname,ms_product.product_img as product_img,ms_product.here_price as Phere_price,ms_product.machete_price as Pmachete_price,ms_product.sales_vol as Psales_vol,ms_category.name as PCName FROM `ms_shopcar` INNER JOIN ms_product ON ms_shopcar.pro_Id = ms_product.Id INNER JOIN ms_category ON ms_category.Id = ms_product.classId  WHERE `user_Name` = 'qcx120' AND `Id` = '37' ORDER BY ms_shopcar.addtime desc LIMIT 0,2   [ RunTime:0.000305s ]
+ERR: 1052:Column 'Id' in where clause is ambiguous
+ [ SQLËØ≠Âè• ] : SELECT ms_shopcar.*,ms_shopcar.Id as sId,ms_product.name as Pname,ms_product.product_img as product_img,ms_product.here_price as Phere_price,ms_product.machete_price as Pmachete_price,ms_product.sales_vol as Psales_vol,ms_category.name as PCName FROM `ms_shopcar` INNER JOIN ms_product ON ms_shopcar.pro_Id = ms_product.Id INNER JOIN ms_category ON ms_category.Id = ms_product.classId  WHERE `user_Name` = 'qcx120' AND `Id` = '37' ORDER BY ms_shopcar.addtime desc LIMIT 0,2  
+
+[ 2017-12-29T14:19:54+08:00 ] 127.0.0.1 /my_mall/home/comment/comment
+ERR: Ê®°Êùø‰∏çÂ≠òÂú®:./Application/Home/View/comment/comment.html
+
+[ 2017-12-29T15:34:18+08:00 ] 127.0.0.1 /my_mall/home/shopcar/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002419s ]
+SQL: SHOW COLUMNS FROM `ms_shopcar` [ RunTime:0.025343s ]
+SQL: SELECT * FROM `ms_shopcar` WHERE `pro_Id` = 21 AND `user_Name` = 'qcx120' LIMIT 1   [ RunTime:0.000648s ]
+SQL: INSERT INTO `ms_shopcar` (`user_Name`,`pro_Id`,`pro_num`,`addtime`) VALUES ('qcx120',21,1,'2017-12-29 15:34:18') [ RunTime:0.000589s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ms_shopcar` WHERE `user_Name` = 'qcx120' LIMIT 1   [ RunTime:0.000487s ]
+SQL: SELECT ms_shopcar.*,ms_shopcar.Id as sId,ms_product.name as Pname,ms_product.product_img as product_img,ms_product.here_price as Phere_price,ms_product.machete_price as Pmachete_price,ms_product.sales_vol as Psales_vol,ms_category.name as PCName FROM `ms_shopcar` INNER JOIN ms_product ON ms_shopcar.pro_Id = ms_product.Id INNER JOIN ms_category ON ms_category.Id = ms_product.classId  WHERE `pro_Id` = '21' AND `user_Name` = 'qcx120' ORDER BY ms_shopcar.addtime desc LIMIT 0,3   [ RunTime:0.000779s ]
+
+[ 2017-12-29T15:34:22+08:00 ] 127.0.0.1 /my_mall/home/shopcar/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001128s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001999s ]
+SQL: SHOW COLUMNS FROM `ms_shopcar` [ RunTime:0.006816s ]
+SQL: SELECT * FROM `ms_shopcar` WHERE `pro_Id` = 21 AND `user_Name` = 'qcx120' LIMIT 1   [ RunTime:0.002163s ]
+
+[ 2017-12-29T15:35:41+08:00 ] 127.0.0.1 /my_mall/home/shopcar/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002537s ]
+SQL: SHOW COLUMNS FROM `ms_shopcar` [ RunTime:0.035344s ]
+SQL: SELECT * FROM `ms_shopcar` WHERE `pro_Id` = 21 AND `user_Name` = 'qcx120' LIMIT 1   [ RunTime:0.000612s ]
+
+[ 2017-12-29T16:49:52+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=26
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001203s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002086s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.025123s ]
+SQL: SELECT * FROM `ms_address` WHERE `Id` = 26 LIMIT 1   [ RunTime:0.000423s ]
+
+[ 2017-12-29T16:50:01+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001151s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001940s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.043575s ]
+SQL: UPDATE `ms_address` SET `name`='ÊòØÁöÑ',`address_province`='Âåó‰∫¨Â∏\Ç',`address_city`='Âåó‰∫¨Â∏\Ç',`address_county`='ÊúùÈò≥Âå\∫',`address_info`='Â§ö‰∏™5555',`phonenumber`='15233656985',`postcode`='152336' WHERE `Id` = 26 [ RunTime:0.000553s ]
+
+[ 2017-12-29T17:33:14+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=26
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005291s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.026670s ]
+SQL: SELECT * FROM `ms_address` WHERE `Id` = 26 LIMIT 1   [ RunTime:0.000499s ]
+
+[ 2017-12-29T17:33:19+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005391s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.014624s ]
+SQL: UPDATE `ms_address` SET `ismoren`='Âê\¶' WHERE `user_Name` = 'qcx120' [ RunTime:0.000915s ]
+SQL: UPDATE `ms_address` SET `name`='ÊòØÁöÑ',`address_province`='Âåó‰∫¨Â∏\Ç',`address_city`='Âåó‰∫¨Â∏\Ç',`address_county`='ÊúùÈò≥Âå\∫',`address_info`='Â§ö‰∏™',`phonenumber`='15233656985',`postcode`='152336',`ismoren`='Êò\Ø' WHERE `Id` = 26 [ RunTime:0.001941s ]
+
+[ 2017-12-29T17:34:21+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=26
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007065s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.007117s ]
+SQL: SELECT * FROM `ms_address` WHERE `Id` = 26 LIMIT 1   [ RunTime:0.000465s ]
+
+[ 2017-12-29T17:34:26+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005176s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.013012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ms_address` WHERE `user_Name` = 'qcx120' LIMIT 1   [ RunTime:0.000646s ]
+SQL: SELECT * FROM `ms_address` WHERE `user_Name` = 'qcx120' ORDER BY Id desc LIMIT 0,5   [ RunTime:0.001298s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000283s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030720s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030971s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001855s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001989s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007533s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007700s ]
+
+[ 2017-12-29T17:34:28+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004683s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.026844s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ms_address` WHERE `user_Name` = 'qcx120' LIMIT 1   [ RunTime:0.000501s ]
+SQL: SELECT * FROM `ms_address` WHERE `user_Name` = 'qcx120' ORDER BY Id desc LIMIT 0,5   [ RunTime:0.002251s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022945s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023096s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001034s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005551s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005739s ]
+
+[ 2017-12-29T17:34:28+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006013s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.012867s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ms_address` WHERE `user_Name` = 'qcx120' LIMIT 1   [ RunTime:0.002556s ]
+SQL: SELECT * FROM `ms_address` WHERE `user_Name` = 'qcx120' ORDER BY Id desc LIMIT 0,5   [ RunTime:0.002659s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000257s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000515s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030219s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030569s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001859s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004329s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004869s ]
+
+[ 2017-12-29T17:34:29+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002889s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004742s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.028568s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ms_address` WHERE `user_Name` = 'qcx120' LIMIT 1   [ RunTime:0.002092s ]
+SQL: SELECT * FROM `ms_address` WHERE `user_Name` = 'qcx120' ORDER BY Id desc LIMIT 0,5   [ RunTime:0.001132s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000215s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000424s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031260s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031505s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001725s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001890s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003102s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003343s ]
+
+[ 2017-12-29T17:34:30+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007508s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.014557s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ms_address` WHERE `user_Name` = 'qcx120' LIMIT 1   [ RunTime:0.000710s ]
+SQL: SELECT * FROM `ms_address` WHERE `user_Name` = 'qcx120' ORDER BY Id desc LIMIT 0,5   [ RunTime:0.001302s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000218s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000409s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032331s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032554s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001330s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001457s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007467s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007643s ]
+
+[ 2017-12-29T17:34:33+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=31
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006180s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.011443s ]
+SQL: SELECT * FROM `ms_address` WHERE `Id` = 31 LIMIT 1   [ RunTime:0.000714s ]
+
+[ 2017-12-29T17:34:38+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002368s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.007727s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ms_address` WHERE `user_Name` = 'qcx120' LIMIT 1   [ RunTime:0.000398s ]
+SQL: SELECT * FROM `ms_address` WHERE `user_Name` = 'qcx120' ORDER BY Id desc LIMIT 0,5   [ RunTime:0.000701s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000262s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020085s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020492s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000829s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001797s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001908s ]
+
+[ 2017-12-29T17:34:39+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002753s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.024457s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ms_address` WHERE `user_Name` = 'qcx120' LIMIT 1   [ RunTime:0.000383s ]
+SQL: SELECT * FROM `ms_address` WHERE `user_Name` = 'qcx120' ORDER BY Id desc LIMIT 0,5   [ RunTime:0.000815s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017198s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000815s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003613s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003712s ]
+
+[ 2017-12-29T17:34:39+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004797s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.006834s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ms_address` WHERE `user_Name` = 'qcx120' LIMIT 1   [ RunTime:0.000423s ]
+SQL: SELECT * FROM `ms_address` WHERE `user_Name` = 'qcx120' ORDER BY Id desc LIMIT 0,5   [ RunTime:0.002428s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000666s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017357s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017477s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000806s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002070s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002815s ]
+
+[ 2017-12-29T17:34:39+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003750s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.009973s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ms_address` WHERE `user_Name` = 'qcx120' LIMIT 1   [ RunTime:0.000385s ]
+SQL: SELECT * FROM `ms_address` WHERE `user_Name` = 'qcx120' ORDER BY Id desc LIMIT 0,5   [ RunTime:0.002137s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000283s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000588s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017402s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017524s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000802s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005009s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005204s ]
+
+[ 2017-12-29T17:34:39+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002834s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.009813s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ms_address` WHERE `user_Name` = 'qcx120' LIMIT 1   [ RunTime:0.000427s ]
+SQL: SELECT * FROM `ms_address` WHERE `user_Name` = 'qcx120' ORDER BY Id desc LIMIT 0,5   [ RunTime:0.000607s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020417s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020525s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000742s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000804s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001454s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001543s ]
+
+[ 2017-12-29T17:34:40+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004491s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.007293s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ms_address` WHERE `user_Name` = 'qcx120' LIMIT 1   [ RunTime:0.000415s ]
+SQL: SELECT * FROM `ms_address` WHERE `user_Name` = 'qcx120' ORDER BY Id desc LIMIT 0,5   [ RunTime:0.001930s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000180s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000653s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019142s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019382s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000869s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001571s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001679s ]
+
+[ 2017-12-29T17:34:43+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=31
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007647s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.026457s ]
+SQL: SELECT * FROM `ms_address` WHERE `Id` = 31 LIMIT 1   [ RunTime:0.000692s ]
+
+[ 2017-12-29T17:35:21+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=26
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004390s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.024383s ]
+SQL: SELECT * FROM `ms_address` WHERE `Id` = 26 LIMIT 1   [ RunTime:0.000668s ]
+
+[ 2017-12-29T17:35:28+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003760s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.011691s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ms_address` WHERE `user_Name` = 'qcx120' LIMIT 1   [ RunTime:0.001300s ]
+SQL: SELECT * FROM `ms_address` WHERE `user_Name` = 'qcx120' ORDER BY Id desc LIMIT 0,5   [ RunTime:0.001131s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025285s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025645s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001385s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002754s ]
+
+[ 2017-12-29T17:35:29+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004199s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.006897s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ms_address` WHERE `user_Name` = 'qcx120' LIMIT 1   [ RunTime:0.000389s ]
+SQL: SELECT * FROM `ms_address` WHERE `user_Name` = 'qcx120' ORDER BY Id desc LIMIT 0,5   [ RunTime:0.001918s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014985s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002317s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002760s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002917s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003076s ]
+
+[ 2017-12-29T17:35:30+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004264s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.027559s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ms_address` WHERE `user_Name` = 'qcx120' LIMIT 1   [ RunTime:0.000430s ]
+SQL: SELECT * FROM `ms_address` WHERE `user_Name` = 'qcx120' ORDER BY Id desc LIMIT 0,5   [ RunTime:0.002095s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000303s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000693s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019180s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019401s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000760s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000824s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002013s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002520s ]
+
+[ 2017-12-29T17:35:32+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=26
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002174s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003239s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.055048s ]
+SQL: SELECT * FROM `ms_address` WHERE `Id` = 26 LIMIT 1   [ RunTime:0.002161s ]
+
+[ 2017-12-29T17:35:36+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=26
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009705s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.028463s ]
+SQL: SELECT * FROM `ms_address` WHERE `Id` = 26 LIMIT 1   [ RunTime:0.000607s ]
+
+[ 2017-12-29T17:36:50+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=24
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002301s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.006482s ]
+SQL: SELECT * FROM `ms_address` WHERE `Id` = 24 LIMIT 1   [ RunTime:0.000974s ]
+
+[ 2017-12-29T17:36:52+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003367s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.007603s ]
+SQL: UPDATE `ms_address` SET `ismoren`='Âê\¶' WHERE `user_Name` = 'qcx120' [ RunTime:0.001649s ]
+SQL: UPDATE `ms_address` SET `name`='‰ΩÜÊòØ',`address_province`='Âåó‰∫¨Â∏\Ç',`address_city`='Âåó‰∫¨Â∏\Ç',`address_county`='‰∏úÂüéÂå\∫',`address_info`='Ê†ºÂºè',`phonenumber`='15200965961',`postcode`='965961',`ismoren`='Êò\Ø' WHERE `Id` = 24 [ RunTime:0.000429s ]
+
+[ 2017-12-29T17:36:55+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002167s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004004s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.007007s ]
+SQL: SELECT * FROM `ms_address` WHERE `Id` = 25 LIMIT 1   [ RunTime:0.000467s ]
+
+[ 2017-12-29T17:37:02+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=31
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001942s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003310s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.009897s ]
+SQL: SELECT * FROM `ms_address` WHERE `Id` = 31 LIMIT 1   [ RunTime:0.000608s ]
+
+[ 2017-12-29T17:37:07+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002103s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003833s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.006334s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ms_address` WHERE `user_Name` = 'qcx120' LIMIT 1   [ RunTime:0.001849s ]
+SQL: SELECT * FROM `ms_address` WHERE `user_Name` = 'qcx120' ORDER BY Id desc LIMIT 0,5   [ RunTime:0.000695s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016819s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016936s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000827s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002710s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002918s ]
+
+[ 2017-12-29T17:37:10+08:00 ] 127.0.0.1 /my_mall/home/address/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005023s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.010442s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ms_address` WHERE `user_Name` = 'qcx120' LIMIT 1   [ RunTime:0.000552s ]
+SQL: SELECT * FROM `ms_address` WHERE `user_Name` = 'qcx120' ORDER BY Id desc LIMIT 0,5   [ RunTime:0.000851s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000357s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000680s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026202s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026350s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001171s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003860s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004015s ]
+
+[ 2017-12-29T17:37:14+08:00 ] 127.0.0.1 /my_mall/home/address/ajaxjson?Id=31
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007158s ]
+SQL: SHOW COLUMNS FROM `ms_address` [ RunTime:0.029297s ]
+SQL: SELECT * FROM `ms_address` WHERE `Id` = 31 LIMIT 1   [ RunTime:0.000787s ]
+

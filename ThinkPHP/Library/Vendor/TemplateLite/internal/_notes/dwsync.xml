@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="compile.compile_config.php" server="xiaonan.w190-e0.ezcname.com//xiaonan/wwwroot/" local="131593419186537114" remote="131591075400000000" Dst="0" />
+<file name="compile.compile_custom_block.php" server="xiaonan.w190-e0.ezcname.com//xiaonan/wwwroot/" local="131593419186780484" remote="131591075400000000" Dst="0" />
+<file name="compile.compile_custom_function.php" server="xiaonan.w190-e0.ezcname.com//xiaonan/wwwroot/" local="131593419188419247" remote="131591075400000000" Dst="0" />
+<file name="compile.compile_if.php" server="xiaonan.w190-e0.ezcname.com//xiaonan/wwwroot/" local="131593419189447102" remote="131591075400000000" Dst="0" />
+<file name="compile.generate_compiler_debug_output.php" server="xiaonan.w190-e0.ezcname.com//xiaonan/wwwroot/" local="131593419189452117" remote="131591075400000000" Dst="0" />
+<file name="compile.include.php" server="xiaonan.w190-e0.ezcname.com//xiaonan/wwwroot/" local="131593419189452117" remote="131591075400000000" Dst="0" />
+<file name="compile.parse_is_expr.php" server="xiaonan.w190-e0.ezcname.com//xiaonan/wwwroot/" local="131593419191078630" remote="131591075400000000" Dst="0" />
+<file name="compile.section_start.php" server="xiaonan.w190-e0.ezcname.com//xiaonan/wwwroot/" local="131593419191454497" remote="131591075400000000" Dst="0" />
+<file name="template.build_dir.php" server="xiaonan.w190-e0.ezcname.com//xiaonan/wwwroot/" local="131593419191454497" remote="131591075400000000" Dst="0" />
+<file name="debug.tpl" server="xiaonan.w190-e0.ezcname.com//xiaonan/wwwroot/" local="131593419192031196" remote="131591075400000000" Dst="0" />
+<file name="template.fetch_compile_include.php" server="xiaonan.w190-e0.ezcname.com//xiaonan/wwwroot/" local="131593419193369157" remote="131591075400000000" Dst="0" />
+<file name="template.config_loader.php" server="xiaonan.w190-e0.ezcname.com//xiaonan/wwwroot/" local="131593419194129734" remote="131591075400000000" Dst="0" />
+<file name="template.destroy_dir.php" server="xiaonan.w190-e0.ezcname.com//xiaonan/wwwroot/" local="131593419194129734" remote="131591075400000000" Dst="0" />
+<file name="template.generate_debug_output.php" server="xiaonan.w190-e0.ezcname.com//xiaonan/wwwroot/" local="131593419195083978" remote="131591075400000000" Dst="0" />
+</dwsync>
